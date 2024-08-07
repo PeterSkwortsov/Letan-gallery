@@ -16,6 +16,11 @@ function App() {
   const [categoryId, setCategoryId] = useState(0)
 
 
+  const [isPage, setPage] = useState(1);
+
+  // let currentPageLeo = dataImg.collections.filter((obj) => obj.page)
+  // console.log(currentPageLeo)
+  
   return (
     <div className="App">
       <h1>Моя коллекция фотографий</h1>
@@ -41,23 +46,33 @@ function App() {
         />
       </div>
       <div className="content">
-        {cats[categoryId].name === "Леонид Колосов"
-          ? dataImg.collections.map((obj, index) => {
-              return (
-                // eslint-disable-next-line jsx-a11y/alt-text
-                <Collect image={obj.image} key={index} name={obj.name} />
-              );
-            }): scvor.collections.map((obj, index) => {
-              return (
-                // eslint-disable-next-line jsx-a11y/alt-text
-                <Collect image={obj.image} key={index} name={obj.name} />
-              );
-            })}
+        {cats[categoryId].name === "Леонид Колосов" 
+          ? dataImg.collections
+              .filter((obj) =>
+                obj.name.toLowerCase().includes(searchValue.toLowerCase())
+              )
+              .map((obj, index) => {
+                return <Collect {...obj} key={index} />;
+              })
+          : scvor.collections
+              .filter((obj) =>
+                obj.name.toLowerCase().includes(searchValue.toLowerCase())
+              )
+              .map((obj, index) => {
+                return <Collect {...obj} key={index} />;
+              })}
       </div>
+
       <ul className="pagination">
-        <li>1</li>
-        <li className="active">2</li>
-        <li>3</li>
+        {[...Array(3)].map((_, index) => (
+          <li
+            key={index}
+            onClick={() => setPage(index + 1)}
+            className={isPage === index + 1 ? "active" : ""}
+          >
+            {index + 1}
+          </li>
+        ))}
       </ul>
     </div>
   );

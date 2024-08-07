@@ -1,13 +1,13 @@
 import dataImg from "../data/data";
-import scvor from "../data/scvor";
 
-let full = dataImg + scvor;
 
-function Collect({ image, name }) {
+function Collect({ image, name, size, format }) {
   return (
     <div className="collection">
-      <img src={image} alt={full.name} />
+      <img src={image} alt={name} />
       <h4 className="title-card">{name}</h4>
+      <h5>{size}</h5>
+      <h6>{format}</h6>
     </div>
   );
 }
