@@ -1,80 +1,53 @@
 import './App.css';
-// import Collect from './components/Colect.jsx';
 import { useState } from 'react';
+import Kolosov from './components/Kolosov';
+import Skvortsova from './components/Skvortsova';
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
+import CustomModal from './components/CustomModal/CustomModal';
+import MainLayout from './layouts/MainLayout';
 import dataImg from './data/data';
 import Collect from './components/Colect';
-import scvor from './data/scvor';
-
-const cats = [
-        {name: 'Леонид Колосов'},
-        {name: 'Татьяна Скворцова'}
-    ]
 
 function App() {
 
-  const [searchValue, setSearchValue] = useState('')
-  const [categoryId, setCategoryId] = useState(0)
+  const [modalPrize, setModalPrize] = useState(false);
+      const [searchValue, setSearchValue] = useState("");
 
-
-  const [isPage, setPage] = useState(1);
-
-  // let currentPageLeo = dataImg.collections.filter((obj) => obj.page)
-  // console.log(currentPageLeo)
-  
   return (
-    <div className="App">
-      <h1>Моя коллекция фотографий</h1>
-      <div className="top">
-        <ul className="tags">
-          {cats.map((obj, index) => {
-            return (
-              <li
-                className={categoryId === index ? "active" : ""}
-                onClick={() => setCategoryId(index)}
-                key={index}
-              >
-                {obj.name}
-              </li>
-            );
-          })}
-        </ul>
-        <input
-          value={searchValue}
-          onChange={(event) => setSearchValue(event.target.value)}
-          className="search-input"
-          placeholder="Поиск по названию"
-        />
-      </div>
-      <div className="content">
-        {cats[categoryId].name === "Леонид Колосов" 
-          ? dataImg.collections
-              .filter((obj) =>
-                obj.name.toLowerCase().includes(searchValue.toLowerCase())
-              )
-              .map((obj, index) => {
-                return <Collect {...obj} key={index} />;
-              })
-          : scvor.collections
-              .filter((obj) =>
-                obj.name.toLowerCase().includes(searchValue.toLowerCase())
-              )
+    <>
+      <BrowserRouter>
+        <div className="App">
+          <Routes>
+            <Route path="/" element={<MainLayout />}>
+              <Route index element={<CustomModal />} />
+              <Route path="kolosov" element={<Kolosov />} />
+              <Route path="skvortsova" element={<Skvortsova />} />
+              <Route path="*" element={<h6>Такой страницы нет</h6>} />
+            </Route>
+          </Routes>
+
+          <button
+            className="modal-show-button"
+            onClick={() => setModalPrize(true)}
+          >
+            {dataImg.collections
+              
               .map((obj, index) => {
                 return <Collect {...obj} key={index} />;
               })}
-      </div>
+          </button>
 
-      <ul className="pagination">
-        {[...Array(3)].map((_, index) => (
-          <li
-            key={index}
-            onClick={() => setPage(index + 1)}
-            className={isPage === index + 1 ? "active" : ""}
-          >
-            {index + 1}
-          </li>
-        ))}
-      </ul>
-    </div>
+          <CustomModal 
+          isOpen={modalPrize} 
+          onClose={() => setModalPrize(false)}>
+
+               <img src={dataImg.collections.map((obj, index) => { return obj.image })} alt='sdg' />;
+             
+            
+          </CustomModal>
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
