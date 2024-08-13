@@ -6,7 +6,6 @@ import { useState } from "react";
 const Skvortsova = () => {
 
     const [searchValue, setSearchValue] = useState("");
-    const [categoryId, setCategoryId] = useState(0);
 
 
 

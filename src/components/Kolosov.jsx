@@ -3,11 +3,9 @@ import Collect from "./Colect";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import CustomModal from "./CustomModal/CustomModal";
-import { Outlet } from "react-router-dom";
 
 const Kolosov = () => {
   const [searchValue, setSearchValue] = useState("");
-  const [categoryId, setCategoryId] = useState(0);
   const [modalPrize, setModalPrize] = useState(false);
 
   return (
@@ -44,6 +42,3 @@ const Kolosov = () => {
 
 export default Kolosov;
 
-// dataImg.collections.map((obj, index) => {
-//   <Collect {...obj} key={index} />;
-// });

@@ -16,11 +16,18 @@ const Header = () => {
           каталог картин<br></br> ЛЕОНИДА КОЛОСОВА и ТАТЬЯНЫ СКВОРЦОВОЙ
         </h1>
         <nav className="tags">
-          
-            <Link className="btn-main" to="/kolosov">Фантастические миры</Link>
-            <Link className="btn-main" to="/skvortsova">Летние пейзажи</Link>
-            <Link className="btn-main" to="/kolosov">Зимние пейзажи</Link>
-            <Link className="btn-main" to="/kolosov">Натюрморты</Link>
+          <Link className="btn-main" to="/kolosov">
+            Фантастические миры
+          </Link>
+          <Link className="btn-main" to="/skvortsova">
+            Летние пейзажи
+          </Link>
+          <Link className="btn-main" to="/winter">
+            Зимние пейзажи
+          </Link>
+          <Link className="btn-main" to="/kolosov">
+            Натюрморты
+          </Link>
         </nav>
       </div>
     </>
