@@ -12,21 +12,15 @@ const Header = () => {
   return (
     <>
       <div className="top">
-       
-        <h1>каталог картин<br></br> ЛЕОНИДА КОЛОСОВА и ТАТЬЯНЫ СКВОРЦОВОЙ</h1>
+        <h1>
+          каталог картин<br></br> ЛЕОНИДА КОЛОСОВА и ТАТЬЯНЫ СКВОРЦОВОЙ
+        </h1>
         <nav className="tags">
-          <li className="btn-main">
-            <Link to="/kolosov">Фантастические миры</Link>
-          </li>
-          <li>
-            <Link to="/skvortsova">Летние пейзажи</Link>
-          </li>
-          <li>
-            <Link to="/kolosov">Зимние пейзажи</Link>
-          </li>
-          <li>
-            <Link to="/kolosov">Натюрморты</Link>
-          </li>
+          
+            <Link className="btn-main" to="/kolosov">Фантастические миры</Link>
+            <Link className="btn-main" to="/skvortsova">Летние пейзажи</Link>
+            <Link className="btn-main" to="/kolosov">Зимние пейзажи</Link>
+            <Link className="btn-main" to="/kolosov">Натюрморты</Link>
         </nav>
       </div>
     </>

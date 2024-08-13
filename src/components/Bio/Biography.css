@@ -1,0 +1,114 @@
+
+.biography-main {
+ display: flex;
+ margin-top: 4.5rem;
+ justify-content: center;
+}
+
+.biography {
+    padding: 50px;
+        width: 100%;
+        max-width: 1500px;
+        margin: 0 auto;
+}
+
+.biography-leonid {
+    gap: 20px;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+        justify-content: center;
+        max-width: 800px;
+
+}
+
+.biography-leonid-list {
+    display: flex;
+        gap: 30px;
+        flex-direction: column;
+        max-width: 700px;
+        align-items: center;
+        justify-content: center;
+            margin-left: 3rem;
+}
+
+.biography-block {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.biography-block p {
+max-width: 600px;
+    margin-right: 4rem;
+}
+
+.mushroom-season {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin: 0 auto;
+    gap: 80px;
+    margin-top: 4rem;
+}
+
+ ul {
+    font-size: large;
+    font-weight: bold;
+    
+ }
+
+ 
+ .mushroom-img {
+    max-width: 600px;
+ }
+ .mushroom-img p {
+    margin-top: 3rem;
+ }
+ .mushroom-img img {
+    border-radius: 10px;
+ }
+ .mushroom-title {
+    gap: 20px;
+    display: block;
+    max-width: 600px;
+ }
+ .mushroom-title li {
+    margin: 15px;
+}
+
+.art-room {
+    margin-top: 5rem;
+    display: flex;
+    padding: 2rem;
+        gap: 3rem;
+    }
+.biography-leonid img{
+    padding: 0.4rem;
+}
+.biography-leonid li{
+    background-color: transparent;
+    display: inline-block;
+    padding: 12px 18px; 
+        font-weight: 500;
+        display: flex;
+        align-content: center;
+        align-items: center;
+}
+.biography-leonid :hover{
+   color: black;
+}
+
+.white-blok {
+    background-color: white;
+        margin-bottom: 4rem;
+        display: flex;
+        padding: 5rem;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: large;
+        text-align: center;
+}
