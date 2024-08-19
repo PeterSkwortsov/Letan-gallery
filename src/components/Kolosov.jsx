@@ -1,41 +1,65 @@
-import dataImg from "../data/data";
-import Collect from "./Colect";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import CustomModal from "./CustomModal/CustomModal";
+import data from "../data/data";
+import Modal from "./CustomModal/GalleryClick/Modal";
 
-const Kolosov = () => {
-  const [searchValue, setSearchValue] = useState("");
+const Kolosov = ({props}) => {
   const [modalPrize, setModalPrize] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
+
+  const [clickImg, setClickImg] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(null);
+
+
+  const handleClick = (item, index) => {
+    setCurrentIndex(index);
+    setClickImg(item.image);
+  };
 
   return (
     <>
-      <h1>Фантастические миры Леонида Колосова</h1>
-      <Link to="/" className="btn-main">
-        Назад
-      </Link>
+      <h2>Фантастические миры Леонида Колосова</h2>
 
-      <input
-        value={searchValue}
-        onChange={(event) => setSearchValue(event.target.value)}
-        className="search-input"
-        placeholder="Поиск по названию"
-      />
+      <div className="search">
+        <Link to="/" className="btn-main">
+          Назад
+        </Link>
 
-      <button className="modal-show-button" onClick={() => setModalPrize(true)}>
-        <div className="content">
-          {dataImg.collections
-            .filter((obj) =>
-              obj.name.toLowerCase().includes(searchValue.toLowerCase())
-            )
-            .map((obj, index) => {
-              return <Collect {...obj} key={index} />;
-            })}
-        </div>
-      </button>
+        <input
+          value={searchValue}
+          onChange={(event) => setSearchValue(event.target.value)}
+          className="search-input"
+          placeholder="Поиск по названию"
+        />
+      </div>
 
-      <CustomModal isOpen={modalPrize} onClose={() => setModalPrize(false)}>
-      </CustomModal>
+      <div className="wrapper">
+        {data.collections
+          .filter((obj) =>
+            obj.name.toLowerCase().includes(searchValue.toLowerCase())
+          )
+          .map((item, index) => {
+            return (
+              <div className="wrapper-images" key={index}>
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  onClick={() => handleClick(item, index)}
+                />
+                <h4>{item.name}</h4>
+                <h5>{item.size}</h5>
+                <p>{item.format}</p>
+              </div>
+            );
+          })}
+        {clickImg && (
+          <Modal
+            clickImg={clickImg}
+            currentIndex={currentIndex}
+            setClickImg={setClickImg}
+          />
+        )}
+      </div>
     </>
   );
 };

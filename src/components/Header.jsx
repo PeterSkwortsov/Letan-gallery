@@ -1,8 +1,11 @@
-import { useState } from "react";
-import { Link, Outlet } from "react-router-dom";
-import App from "../App.css";
+import { Link } from "react-router-dom";
 
-
+// const titles = [
+//   "Фантастические миры",
+//   "Летние пейзажи",
+//   "Зимние пейзажи",
+//   "Натюрморты",
+// ]
 
 
 const Header = () => {
@@ -12,9 +15,13 @@ const Header = () => {
   return (
     <>
       <div className="top">
-        <h1>
-          каталог картин<br></br> ЛЕОНИДА КОЛОСОВА и ТАТЬЯНЫ СКВОРЦОВОЙ
-        </h1>
+        <div className="title-header">
+          <Link to="/" className="title-main">
+            <span>каталог картин</span>
+            <br></br>
+            <h1>ЛЕОНИДА КОЛОСОВА и ТАТЬЯНЫ СКВОРЦОВОЙ</h1>
+          </Link>
+        </div>
         <nav className="tags">
           <Link className="btn-main" to="/kolosov">
             Фантастические миры
@@ -27,6 +34,9 @@ const Header = () => {
           </Link>
           <Link className="btn-main" to="/kolosov">
             Натюрморты
+          </Link>
+          <Link className="btn-main" to="/kolosov">
+            Сказочные животные
           </Link>
         </nav>
       </div>

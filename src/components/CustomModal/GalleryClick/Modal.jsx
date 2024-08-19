@@ -1,23 +1,20 @@
-import arrowRight from '../../../images/arr.svg'
-import WinterCollect from '../../WinterCollect';
-
+import xIcon from '../../../images/x.png';
 
 const Modal = ({ clickImg, setClickImg }) => {
     
     const handleClick = (e) => {
-      if(e.target.classList.contains('dismiss')){
-        setClickImg(null)
+      if (e.target.classList.contains("dismiss")) {
+        setClickImg(null);
       }
     };
     
     return (
       <>
-        <div className="overlay dismiss" onClick={handleClick}>
+        <div className="overlay" onClick={handleClick}>
           <img src={clickImg} alt="Большое изображение"></img>
-          <span className="dismiss" onClick={handleClick}>
-            Х
+          <span onClick={handleClick}>
+            <img src={xIcon} className="dismiss x-icon"></img>
           </span>
-         
         </div>
       </>
     );

@@ -3,7 +3,7 @@ import Kolosov from "./components/Kolosov";
 import Skvortsova from "./components/Skvortsova";
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-
+import Footer from "./components/Footer";
 import Biography from "./components/Bio/Biography";
 import WinterCollect from "./components/WinterCollect";
 
@@ -24,6 +24,7 @@ function App() {
               <Route path="*" element={<h6>Такой страницы нет</h6>} />
             </Route>
           </Routes>
+          <Footer />
         </div>
       </BrowserRouter>
     </>

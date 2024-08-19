@@ -11,16 +11,7 @@ const WinterCollect = () => {
     setClickImg(item.image);
   };
 
-  const handleRotationRight = () => {
-    const totalLength = data.collections.image.length;
-    if (currentIndex + 1 >= totalLength) {
-      setCurrentIndex(0);
-      setClickImg(data.collections[0].image);
-      return;
-    }
-    setCurrentIndex(currentIndex + 1);
-    setClickImg(data.collections[currentIndex + 1].image);
-}
+
 
 
   return (
@@ -36,7 +27,9 @@ const WinterCollect = () => {
                 alt={item.name}
                 onClick={() => handleClick(item, index)}
               />
-              <h2>{item.name}</h2>
+              <h4>{item.name}</h4>
+              <h5>{item.size}</h5>
+              <p>{item.format}</p>
             </div>
           );
         })}

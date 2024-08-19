@@ -19,7 +19,7 @@ const Biography = () => {
          <section className="biography">
            <div className="biography-main">
              <div className="biography-img">
-               <h2>Леонид Колсов</h2>
+               <h2>Леонид Колосов</h2>
                <img src={leonid}></img>
              </div>
 
