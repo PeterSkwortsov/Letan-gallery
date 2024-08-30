@@ -3,6 +3,7 @@
  display: flex;
  margin-top: 4.5rem;
  justify-content: center;
+
 }
 .biography-main-tat {
  display: flex;
@@ -29,6 +30,19 @@ padding: 0 2rem;
 
 }
 
+.biography-img img{
+    display: flex;
+    max-width: 500px;
+    background-size: cover;
+    align-content: center;
+    justify-content: center;
+    border-radius: 5%;
+}
+/* .biography-img {
+max-width: 80%;
+background-size: cover;
+} */
+
 .biography-leonid-list {
     display: flex;
         gap: 30px;
@@ -44,12 +58,36 @@ padding: 0 2rem;
     margin-top: 4rem;
     justify-content: center;
     align-items: center;
+    
+}
+.biography-block-tan {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
     padding: 0 2rem;
+    gap: 3rem;
+    
+}
+.biography-block-tan img{
+    margin-top: 2rem;
+    max-width: 90%;
+    
+}
+.biography-block-len {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: center;
+    align-items: center;
+   
     
 }
 .biography-block p {
 max-width: 600px;
     margin-right: 4rem;
+}
+.biography-block-tan p {
+max-width: 600px;
 }
 
 .mushroom-season {
@@ -160,6 +198,7 @@ max-width: 600px;
     border-radius: 10px;
     box-shadow: rgb(145, 145, 145) 5px 5px 5px;
     margin-bottom: 1rem;
+    width: 100%;
 }
 
 .grid-img-block {
@@ -167,17 +206,20 @@ max-width: 600px;
 }
 
 
-@media screen and (max-width: 1440px) {
 
+@media screen and (min-width: 1440px) {
 
-    .grid-img-img {
-        max-width: 100%;
+ 
 
+    .biography-img img {
+        max-width: 500px;
+    
     }
 }
 
 
 @media screen and (max-width: 1200px) {
+   
      
 .biography-leonidm li {
     font-size: 1rem;
@@ -192,6 +234,11 @@ max-width: 600px;
 margin-right: 0rem;
 }
 
+   .biography-img img {
+       max-width: 100%;
+
+   }
+
 .mushroom-img {
     max-width: 500px;
 }
@@ -202,6 +249,10 @@ margin-right: 0rem;
 .biography-leonid li {
    font-size: 0.9rem;
 }
+
+
+
+
   }
 
 @media screen and (max-width: 768px) {
@@ -220,6 +271,13 @@ align-items: center;
     border-radius: 10px;
     margin: 0 auto;
     display: flex;
+    width: 100%;
+}
+
+.biography-block-tan {
+
+    flex-direction: column;
+
 }
 .art-room {
     flex-direction: column;

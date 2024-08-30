@@ -6,9 +6,11 @@ import MainLayout from "./layouts/MainLayout";
 import Footer from "./components/Footer";
 import Biography from "./components/Bio/Biography";
 import WinterCollect from "./components/WinterCollect";
+import Flowers from "./components/Flowers";
+import Animals from "./components/Animals";
+import Blog from "./components/Blog";
 
 function App() {
-  // const [searchValue, setSearchValue] = useState("");
 
   return (
     <>
@@ -19,8 +21,10 @@ function App() {
               <Route path="/" element={<Biography />} />
               <Route path="kolosov" element={<Kolosov />} />
               <Route path="skvortsova" element={<Skvortsova />} />
+              <Route path="flowers" element={<Flowers />} />
+              <Route path="animals" element={<Animals />} />
               <Route path="winter" element={<WinterCollect />} />
-
+              <Route path="blog" element={<Blog />} />
               <Route path="*" element={<h6>Такой страницы нет</h6>} />
             </Route>
           </Routes>

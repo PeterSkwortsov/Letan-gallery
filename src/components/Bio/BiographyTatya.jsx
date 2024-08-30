@@ -53,7 +53,7 @@ const BiographyTatya = () => {
           </ul>
         </div>
 
-        <div className="biography-block">
+        <div className="biography-block-tan">
           <p>
             Мы с семьей много ездим по Нижегородской области. Отдавая
             предпочтение живописным местам с небольшими реками, уезжаем на Узолу

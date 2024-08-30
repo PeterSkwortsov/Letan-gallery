@@ -32,11 +32,14 @@ const Header = () => {
           <Link className="btn-main" to="/winter">
             Зимние пейзажи
           </Link>
-          <Link className="btn-main" to="/kolosov">
-            Натюрморты
+          <Link className="btn-main" to="/flowers">
+            Цветы и натюрморты
           </Link>
-          <Link className="btn-main" to="/kolosov">
+          <Link className="btn-main" to="/animals">
             Сказочные животные
+          </Link>
+          <Link className="btn-main" to="/blog">
+            Художественные заметки
           </Link>
         </nav>
       </div>
