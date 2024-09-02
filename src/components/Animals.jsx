@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import animals from "../data/animals";
 import { useState } from "react";
 import Modal from "./CustomModal/GalleryClick/Modal";
+
 const Animals = () => {
   const [searchValue, setSearchValue] = useState("");
   const [clickImg, setClickImg] = useState(null);

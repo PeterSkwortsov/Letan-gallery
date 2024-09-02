@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import book from "../images/book.svg";
 // const titles = [
 //   "Фантастические миры",
 //   "Летние пейзажи",
@@ -39,7 +39,8 @@ const Header = () => {
             Сказочные животные
           </Link>
           <Link className="btn-main" to="/blog">
-            Художественные заметки
+            Художественные заметки{" "}
+            {<img src={book} alt="book" className="book" />}
           </Link>
         </nav>
       </div>

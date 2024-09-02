@@ -436,6 +436,7 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 3rem;
   }
 .footer-text span{
   color: white;

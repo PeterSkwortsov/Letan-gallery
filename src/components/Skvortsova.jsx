@@ -16,7 +16,7 @@ const Skvortsova = () => {
 
     return (
       <>
-        <h2>Картины Татьяны Скворцовой</h2>
+        <h2>Летние пейзажи</h2>
         <div className="search">
           <Link to="/" className="btn-main">
             Назад
