@@ -12,13 +12,6 @@ const Modal = ({ clickImg, setClickImg }) => {
       <>
         <div className="overlay dismiss" onClick={handleClick}>
           <img src={clickImg} alt="Большое изображение"></img>
-          <div>
-            {/* <img
-              src={xIcon}
-              onClick={handleClick}
-              className="dismiss x-icon"
-            ></img> */}
-          </div>
         </div>
       </>
     );

@@ -1,16 +1,12 @@
 import { Link } from "react-router-dom";
 import book from "../images/book.svg";
-// const titles = [
-//   "Фантастические миры",
-//   "Летние пейзажи",
-//   "Зимние пейзажи",
-//   "Натюрморты",
-// ]
-
+import { FcLikePlaceholder } from "react-icons/fc";
+import { useState } from "react";
+import Favourites from "./Favourites";
 
 const Header = () => {
 
-
+  let [cartOpen, setCartOpen] = useState(false);
 
   return (
     <>
@@ -42,6 +38,17 @@ const Header = () => {
             Художественные заметки{" "}
             {<img src={book} alt="book" className="book" />}
           </Link>
+          <FcLikePlaceholder
+            className={`shop-cart-button ${cartOpen && "active"}`}
+            onClick={() => setCartOpen((cartOpen = !cartOpen))}
+          />
+
+          {cartOpen && <div className="shop-cart">
+          <Favourites />
+            
+            </div>}
+
+
         </nav>
       </div>
     </>

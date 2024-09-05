@@ -11,10 +11,15 @@ const Kolosov = ({props}) => {
   const [currentIndex, setCurrentIndex] = useState(null);
 
 
+
+
+
   const handleClick = (item, index) => {
     setCurrentIndex(index);
     setClickImg(item.image);
   };
+
+
 
   return (
     <>
@@ -49,6 +54,8 @@ const Kolosov = ({props}) => {
                 <h4>{item.name}</h4>
                 <h5>{item.size}</h5>
                 <p>{item.format}</p>
+
+                <button>Нравится</button>
               </div>
             );
           })}
@@ -63,6 +70,8 @@ const Kolosov = ({props}) => {
     </>
   );
 };
+
+
 
 export default Kolosov;
 
