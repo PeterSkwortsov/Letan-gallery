@@ -3,7 +3,8 @@ import book from "../images/book.svg";
 import { FcLikePlaceholder } from "react-icons/fc";
 import { useState } from "react";
 import Favourites from "./Favourites";
-
+import xClose from "../images/x.svg";
+import xCloseCircle from "../images/circle-x.svg";
 const Header = () => {
 
   let [cartOpen, setCartOpen] = useState(false);
@@ -38,17 +39,23 @@ const Header = () => {
             Художественные заметки{" "}
             {<img src={book} alt="book" className="book" />}
           </Link>
+
           <FcLikePlaceholder
             className={`shop-cart-button ${cartOpen && "active"}`}
             onClick={() => setCartOpen((cartOpen = !cartOpen))}
           />
 
-          {cartOpen && <div className="shop-cart">
-          <Favourites />
-            
-            </div>}
-
-
+          {cartOpen && (
+            <div className="shop-cart">
+              <Favourites />
+              <img
+                src={xCloseCircle}
+                className="btnCircleX"
+                onClick={() => setCartOpen(false)}
+                alt="Закрыть окно"
+              />
+            </div>
+          )}
         </nav>
       </div>
     </>
