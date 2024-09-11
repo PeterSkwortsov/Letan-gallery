@@ -44,6 +44,17 @@ const Header = () => {
             className={`shop-cart-button ${cartOpen && "active"}`}
             onClick={() => setCartOpen((cartOpen = !cartOpen))}
           />
+          <span
+            style={{
+              color: "black",
+              marginLeft: "-10px",
+              borderRadius: "50%",
+              padding: "5px 9px",
+              border: "1px solid black",
+            }}
+          >
+            {4}
+          </span>
 
           {cartOpen && (
             <div className="shop-cart">

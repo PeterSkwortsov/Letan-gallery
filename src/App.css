@@ -341,8 +341,8 @@ margin: 0 auto;
     padding: 1.2rem;
     align-items: center;
     max-width: 1350px;
-      margin-top: 28rem;
-      margin-bottom: 5rem;
+      margin-top: 18rem;
+      /* margin-bottom: 5rem; */
 }
 
 .btn-x {
@@ -561,6 +561,8 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
           grid-template-columns: repeat(2, 1fr);
         
         }
+
+    
  
   }
 
@@ -609,9 +611,13 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 
 .likes-wrapper {
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
 }
+
+
+
+
 
   }
 
@@ -621,9 +627,12 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
     }
          .likes-wrapper {
     
-           grid-template-columns: repeat(1, 1fr);
+          grid-template-columns: repeat(2, 1fr);
+            margin-top: 30rem;
     
          }
+
+    
 
 .title-header {
   margin: 50px 0 50px 0;
@@ -665,6 +674,26 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
     .wrapper {
         grid-template-columns: 1fr;
       }
+.likes-wrapper {
+
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 75rem;
+
+}
+
+
+          
+  }
+  @media screen and (max-width: 350px) {
+ 
+.likes-wrapper {
+
+  margin-top: 35rem;
+
+}
+
+
+          
   }
 
  

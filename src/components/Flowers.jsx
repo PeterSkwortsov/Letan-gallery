@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import flowers from "../data/flowers";
 import { useState } from "react";
 import Modal from "./CustomModal/GalleryClick/Modal";
+import Pagination from "./Pagination/Pagination";
 const Flowers = () => {
   const [searchValue, setSearchValue] = useState("");
   const [clickImg, setClickImg] = useState(null);
@@ -27,7 +28,10 @@ const Flowers = () => {
           placeholder="Поиск по названию"
         />
       </div>
-      <div className="wrapper">
+
+      
+
+      {/* <div className="wrapper">
         {flowers.collections
           .filter((obj) =>
             obj.name.toLowerCase().includes(searchValue.toLowerCase())
@@ -53,7 +57,9 @@ const Flowers = () => {
             setClickImg={setClickImg}
           />
         )}
-      </div>
+      </div> */}
+
+    <Pagination/>
     </>
   );
 };
