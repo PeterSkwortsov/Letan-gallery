@@ -1,5 +1,5 @@
 
-import x from "../images/x.svg"
+import x from "../images/x.svg";
 
 const Favourites = ({cart, removeFromCart}) => {
 
@@ -7,6 +7,16 @@ const Favourites = ({cart, removeFromCart}) => {
 
   return (
     <>
+      <h3
+        style={{
+          textAlign: "center",
+          padding: "1rem",
+          justifyContent: "center",
+        }}
+      >
+        Добавьте картины в избранное
+      </h3>
+
       <div className="likes-wrapper">
         {cart.map((el) => (
           <div className="likes-images">

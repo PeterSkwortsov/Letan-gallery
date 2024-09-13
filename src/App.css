@@ -72,14 +72,10 @@ h2 {
 }
 
 .tags .shop-cart {
-  position: absolute;
     padding: 1rem;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
+    box-shadow: 0 0 50px rgba(5, 5, 4, 3.2);    z-index: 1;
     gap: 1rem;
     font-family: "Montserrat", sans-serif;
     padding: 3rem;
@@ -87,6 +83,7 @@ h2 {
     max-width: 90%;
     color: #000000;
     z-index: 2;
+    margin-top: -10rem;
     
 }
 
@@ -128,14 +125,12 @@ li {
     text-decoration: none;
     color: black;
 
-    &:hover {
-    color: white;
-    }
 }
 
 li:hover {
-      background-color: #000000;
       color: white;
+      font-weight: bold;
+      background-color: #1d1d1d;
 }
 
 a {
@@ -341,8 +336,7 @@ margin: 0 auto;
     padding: 1.2rem;
     align-items: center;
     max-width: 1350px;
-      margin-top: 18rem;
-      /* margin-bottom: 5rem; */
+align-items: stretch;  
 }
 
 .btn-x {
@@ -364,11 +358,13 @@ margin: 0 auto;
   object-fit: cover;
         max-width: 100%;
     border-radius: 10px;
+    cursor: pointer;
 }
 .likes-images img {
   object-fit: cover;
         max-width: 100%;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .likes-images {
@@ -451,7 +447,6 @@ margin: 0 auto;
   padding: 1.1rem;
   border-radius: 30px;
   box-shadow: 0 3px 0 rgba(0, 0, 0, 0.05);
-  cursor: pointer;
   transition: all 0.15s ease-in-out;
   display: flex;
   flex-direction: column;

@@ -68,10 +68,11 @@ const Flowers = ({cart, addToCart}) => {
           .filter((obj) =>
             obj.name.toLowerCase().includes(searchValue.toLowerCase())
           )
-          .map((item, index) => {
+          .map((item, index, key) => {
             return (
               <div className="wrapper-images" key={index}>
                 <img
+                  key={key}
                   src={item.image}
                   alt={item.name}
                   onClick={() => handleClick(item, index)}
