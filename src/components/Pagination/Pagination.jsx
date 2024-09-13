@@ -3,11 +3,8 @@ import pag from './Pagination.module.css'
 import flowers from "../../data/flowers";
 import Modal from "../CustomModal/GalleryClick/Modal";
 
- 
 
-
-
-const Pagination = () => {
+const Pagination = ({cart, addToCart}) => {
 
  const [searchValue, setSearchValue] = useState("");
  const [clickImg, setClickImg] = useState(null);
@@ -20,12 +17,25 @@ const Pagination = () => {
 
 
     const [page, setPage] = useState(1);
+
+    const itemsPerPage = 6;
+    const pagesCount = Math.ceil(flowers.collections.length / itemsPerPage);
+
+    const itemsShowed = flowers.collections.slice(
+      (page - 1) * itemsPerPage,
+      page * itemsPerPage
+    )
+
+
+    function handleAddToCart(el){
+      addToCart(el)
+    }
  
 
     return (
       <>
         <div className="wrapper">
-          {flowers.collections
+          {itemsShowed
             .filter((obj) =>
               obj.name.toLowerCase().includes(searchValue.toLowerCase())
             )
@@ -40,14 +50,15 @@ const Pagination = () => {
                   <h4>{item.name}</h4>
                   <h5>{item.size}</h5>
                   <p>{item.format}</p>
+                  <p>{item.author}</p>
 
-                  <a href="#" className={pag.button + " " + pag.typeA}>
+                  <button href="#" onClick={() => handleAddToCart(item)} className={pag.button + " " + pag.typeA}>
                     <div className={pag.button__line}></div>
                     <div className={pag.button__line}></div>
                     <p className={pag.button__text}>Нравится</p>
                     <div className={pag.button__drow1}></div>
                     <div className={pag.button__drow2}></div>
-                  </a>
+                  </button>
                 </div>
               );
             })}
@@ -62,7 +73,7 @@ const Pagination = () => {
 
         <ul className={pag.all}>
           <li className={pag.page}>
-            {[...Array(6)].map((_, i) => {
+            {[...Array(pagesCount)].map((_, i) => {
               return (
                 <li
                   onClick={() => setPage(i + 1)}

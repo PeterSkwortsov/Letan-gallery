@@ -35,6 +35,8 @@ li:hover {
         letter-spacing: 1px;
         margin-top: 1rem;
         transition: all .3s ease;
+        background: transparent;
+        border: none;
 }
 
 

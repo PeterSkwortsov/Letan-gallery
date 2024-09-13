@@ -5,7 +5,7 @@ import { useState } from "react";
 import Favourites from "./Favourites";
 import xClose from "../images/x.svg";
 import xCloseCircle from "../images/circle-x.svg";
-const Header = () => {
+const Header = ({cart, removeFromCart}) => {
 
   let [cartOpen, setCartOpen] = useState(false);
 
@@ -44,6 +44,7 @@ const Header = () => {
             className={`shop-cart-button ${cartOpen && "active"}`}
             onClick={() => setCartOpen((cartOpen = !cartOpen))}
           />
+          
           <span
             style={{
               color: "black",
@@ -53,12 +54,12 @@ const Header = () => {
               border: "1px solid black",
             }}
           >
-            {4}
+            {cart.length}
           </span>
 
           {cartOpen && (
             <div className="shop-cart">
-              <Favourites />
+              <Favourites cart={cart} removeFromCart={removeFromCart} />
               <img
                 src={xCloseCircle}
                 className="btnCircleX"

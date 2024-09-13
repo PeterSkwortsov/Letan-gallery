@@ -3,7 +3,7 @@ import flowers from "../data/flowers";
 import { useState } from "react";
 import Modal from "./CustomModal/GalleryClick/Modal";
 import Pagination from "./Pagination/Pagination";
-const Flowers = () => {
+const Flowers = ({cart, addToCart}) => {
   const [searchValue, setSearchValue] = useState("");
   const [clickImg, setClickImg] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
@@ -59,7 +59,7 @@ const Flowers = () => {
         )}
       </div> */}
 
-    <Pagination/>
+    <Pagination cart={cart} addToCart={addToCart}/>
     </>
   );
 };
