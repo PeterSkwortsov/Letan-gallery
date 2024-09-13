@@ -31,112 +31,113 @@ const Blog = () => {
         <h2>Блог о творчестве</h2>
         <section className="section-all">
           <div className="item-element">
-            <h3>На прекрасной узоле</h3>
             <a href="https://dzen.ru/a/XqMFhij5mCJPCGVw">
+              <h3>На прекрасной узоле</h3>
               <img src={uzola} alt="uzola" />
             </a>
           </div>
+
           <div className="item-element">
-            <h3>Мой надежный источник вдохновения</h3>
             <a href="https://dzen.ru/a/XphqffWMBy3cFVkT">
+              <h3>Мой надежный источник вдохновения</h3>
               <img src={repin} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Притяжение Репинской дачи</h3>
             <a href="https://dzen.ru/a/XqwVtBUK0nFtyPSv">
+              <h3>Притяжение Репинской дачи</h3>
               <img src={rep2} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Уникальная фишка Нижнего Новгорода</h3>
             <a href="https://dzen.ru/a/XoCSe4MiRHKcWoeQ">
+              <h3>Уникальная фишка Нижнего Новгорода</h3>
               <img src={nNov} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Уголок Нижегородского Поветлужья</h3>
             <a href="https://dzen.ru/a/XnoKAXpvMDMxIScf">
+              <h3>Уголок Нижегородского Поветлужья</h3>
               <img src={povetluze} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Нижегородские заметки. Часть II</h3>
             <a href="https://dzen.ru/a/XnH4kiDw3R8cre9f">
+              <h3>Нижегородские заметки. Часть II</h3>
               <img src={istok} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Ростов Великий - самый сказочный город</h3>
             <a href="https://dzen.ru/a/XlawWyKsIkpCRUuJ">
+              <h3>Ростов Великий - самый сказочный город</h3>
               <img src={rostov} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Мастерская сказочника</h3>
             <a href="https://dzen.ru/a/XhraU9eFmwC05oN4">
+              <h3>Мастерская сказочника</h3>
               <img src={skazochnic} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Нижегородская галерея «Блиновка»</h3>
             <a href="https://dzen.ru/a/Xi6m-booHgCuDSby">
+              <h3>Нижегородская галерея «Блиновка»</h3>
               <img src={blinovka} alt="uzola" />
             </a>
           </div>
 
           <div className="item-element">
-            <h3>Масляная пастель</h3>
             <a href="https://dzen.ru/a/XhBgmR7jTwCxgOmu">
+              <h3>Масляная пастель</h3>
               <img src={pastel} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Про зиму</h3>
             <a href="https://dzen.ru/a/Xg0LIUOGPwCxpgJI">
+              <h3>Про зиму</h3>
               <img src={zima} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Нижегородские заметки</h3>
             <a href="https://dzen.ru/a/Xf3qrm9fbwCuFAC9">
+              <h3>Нижегородские заметки</h3>
               <img src={les} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Красное на Волге</h3>
             <a href="https://dzen.ru/a/Xf3g9qP25ACx5qCE">
+              <h3>Красное на Волге</h3>
               <img src={crasnoe} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>За что любить пастель. Часть II</h3>
             <a href="https://dzen.ru/a/XfdQ_gSvHwCy1eEn">
+              <h3>За что любить пастель. Часть II</h3>
               <img src={nith} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>За что любить пастель. Часть I</h3>
             <a href="https://dzen.ru/a/Xek7vebo7wCuEjHk">
+              <h3>За что любить пастель. Часть I</h3>
               <img src={pastel2} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Гороховецкий пленэр</h3>
             <a href="https://dzen.ru/a/XdqLSWQzj1z27w_X">
+              <h3>Гороховецкий пленэр</h3>
               <img src={goroh} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Охота за этюдами</h3>
             <a href="https://dzen.ru/a/XZHU0ez7gACuuQdy">
+              <h3>Охота за этюдами</h3>
               <img src={stena} alt="uzola" />
             </a>
           </div>
           <div className="item-element">
-            <h3>Живописная поездка в Переславль</h3>
             <a href="https://dzen.ru/a/XZHU0ez7gACuuQdz">
               <img src={oxota} alt="uzola" />
+              <h3>Живописная поездка в Переславль</h3>
             </a>
           </div>
         </section>

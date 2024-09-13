@@ -29,13 +29,33 @@ function App() {
       <BrowserRouter>
         <div className="App">
           <Routes>
-            <Route path="/" element={<MainLayout cart={cart} removeFromCart={removeFromCart} />}>
+            <Route
+              path="/"
+              element={
+                <MainLayout cart={cart} removeFromCart={removeFromCart} />
+              }
+            >
               <Route path="/" element={<Biography />} />
-              <Route path="kolosov" element={<Kolosov />} />
-              <Route path="skvortsova" element={<Skvortsova />} />
-              <Route path="flowers" element={<Flowers cart={cart} addToCart={addToCart} />} />
-              <Route path="animals" element={<Animals />} />
-              <Route path="winter" element={<WinterCollect />} />
+              <Route
+                path="kolosov"
+                element={<Kolosov cart={cart} addToCart={addToCart} />}
+              />
+              <Route
+                path="skvortsova"
+                element={<Skvortsova cart={cart} addToCart={addToCart} />}
+              />
+              <Route
+                path="flowers"
+                element={<Flowers cart={cart} addToCart={addToCart} />}
+              />
+              <Route
+                path="animals"
+                element={<Animals cart={cart} addToCart={addToCart} />}
+              />
+              <Route
+                path="winter"
+                element={<WinterCollect cart={cart} addToCart={addToCart} />}
+              />
               <Route path="blog" element={<Blog />} />
               <Route path="*" element={<h6>Такой страницы нет</h6>} />
             </Route>

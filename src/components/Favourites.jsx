@@ -14,8 +14,9 @@ const Favourites = ({cart, removeFromCart}) => {
               className="btn-x"
               src={x}
               onClick={() => removeFromCart(el)}
+              alt={el.name}
             ></img>
-            <img src={el.image} alt="Лукоморье" />
+            <img src={el.image} alt={el.name} />
             <h4>{el.name}</h4>
             <p>{el.size}</p>
             <p>{el.format}</p>

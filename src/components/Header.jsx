@@ -5,6 +5,7 @@ import { useState } from "react";
 import Favourites from "./Favourites";
 import xClose from "../images/x.svg";
 import xCloseCircle from "../images/circle-x.svg";
+import WinterCollect from "./WinterCollect";
 const Header = ({cart, removeFromCart}) => {
 
   let [cartOpen, setCartOpen] = useState(false);
