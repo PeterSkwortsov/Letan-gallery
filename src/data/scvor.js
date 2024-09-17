@@ -40,10 +40,29 @@ const scvor =
         { name: "Утро", image: "./img/summer-landscapes/Utro.-Hudozhnik-Leonid-Kolosov.-Holstmaslo.-60h70.jpg", page: 3, size: "60х70", format: 'Пастель' },
         { name: "Ветреные сумерки под Кинешмой", image: "./img/summer-landscapes/Vetrennye-sumerki-pod-Kineshmoj.-Hudozhnik-Tatyana-Skvortsova.-Material-bumaga.-Tehnika-pastel.-Razmery-33h25-2.jpg", page: 3, size: "33х25", format: 'Пастель' },
         { name: "Я буду долго гнать велосипед", image: "./img/summer-landscapes/YA-budu-dolgo-gnat-velosiped-50h36.jpg", page: 3, size: "50х36", format: 'Пастель' },
-
-
         { name: "Туманы на Оке", image: "./img/summer-landscapes/Tumany-na-Oke.-Hudozhnik-Leonid-Kolosov.-Tehnika-maslo.-Razmery-70h50-2.jpg", page: 3, size: "70x50", format: 'Пастель' },
         { name: "Жаркое солнце", image: "./img/summer-landscapes/ZHarskoe-solntse.-Hudozhnik-Leonid-Kolosov.-Material-holst.-Tehnika-maslo.-Razmery-30h24.jpg", page: 3, size: "30x24", format: 'Пастель' },  
+
+
+
+        { name: "Бывшая работа", image: "./img/summer-landscapes/byvshaya-rabota.jpg", page: 3, size: "32x43", format: 'Пастель' },  
+        { name: "Елочный остров", image: "./img/summer-landscapes/elochny-ostrov.jpg", page: 3, size: "45x35", format: 'Пастель' },  
+        { name: "Колокольня", image: "./img/summer-landscapes/kolocolnya.jpg", page: 3, size: "38x28", format: 'Пастель' },  
+        { name: "Отличная погода", image: "./img/summer-landscapes/kremlin-pushistye-oblacka.jpg", page: 3, size: "37x27", format: 'Пастель' },  
+        { name: "Лавандовая осень", image: "./img/summer-landscapes/lavandovaya-oseny.jpg", page: 3, size: "42x29", format: 'Пастель' },  
+        { name: "Лесная тропинка", image: "./img/summer-landscapes/lesnaya-tropinka.jpg", page: 3, size: "50x34", format: 'Пастель' },  
+        { name: "Лужа-озеро", image: "./img/summer-landscapes/lyuga-ozero.jpg", page: 3, size: "45х35", format: 'Пастель' },  
+        { name: "Масляный пруд", image: "./img/summer-landscapes/maslyany-prud.jpg", page: 3, size: "30x24", format: 'Масляная пастель' },  
+        { name: "Панорамный вид", image: "./img/summer-landscapes/panoramny-vid.jpg", page: 3, size: "59x29", format: 'Пастель' },  
+        { name: "Поле и сосны", image: "./img/summer-landscapes/pole-i-sosny.jpg", page: 3, size: "20x30", format: 'Пастель' },  
+        { name: "Полет птицы", image: "./img/summer-landscapes/polet-ptice.jpg", page: 3, size: "32x25", format: 'Пастель' },  
+        { name: "Поворот в осень", image: "./img/summer-landscapes/povorot-v-oseny.jpg", page: 3, size: "36x25", format: 'Пастель' },  
+        { name: "Прогулка", image: "./img/summer-landscapes/progulka.jpg", page: 3, size: "25x33", format: 'Пастель' },  
+        { name: "Розовые мальвы", image: "./img/summer-landscapes/rozovye-malvy.jpg", page: 3, size: "30x40", format: 'Пастель' },  
+        { name: "Вид на Клязьму", image: "./img/summer-landscapes/vid-na-clyazmy.jpg", page: 3, size: "24x28", format: 'Пастель' },  
+        { name: "Зеленый закат", image: "./img/summer-landscapes/zeleny-i-zackat.jpg", page: 3, size: "35x25", format: 'Пастель' },  
+        { name: "Зеленая трава", image: "./img/summer-landscapes/zelyonaya-trava.jpg", page: 3, size: "35х25", format: 'Пастель' },  
+        { name: "Желтые цветочки", image: "./img/summer-landscapes/zgeltye-cvety.jpg", page: 3, size: "24х32", format: 'Пастель' },  
     ],
 
 }

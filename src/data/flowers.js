@@ -6,6 +6,12 @@ const flowers =
 
     "collections": [
         { name: "Зимние цветы", image: "./img/flowers/29h42-Zimnie-tsvety.jpg", size: "29x42", format: 'Бумага, пастель', author: 'Скворцова Татьяна' },
+        { name: "Багровый красный", image: "./img/flowers/bagrovy-crasny.jpg", size: "39x29", format: 'Бумага, пастель', author: 'Скворцова Татьяна' },
+        { name: "Натюрморт с подсвечником", image: "./img/flowers/natyrmort-s-podsveshnyk.jpg", size: "50x38", format: 'Бумага, пастель', author: 'Скворцова Татьяна' },
+        { name: "Лохматые пионы", image: "./img/flowers/rozevye-lohmatye-piony.jpg", size: "47x31", format: 'Бумага, пастель', author: 'Скворцова Татьяна' },
+        { name: "Стеклянный натюрморт", image: "./img/flowers/steclyanny-natyrmort.jpg", size: "47x33", format: 'Бумага, пастель', author: 'Скворцова Татьяна' },
+        { name: "Вздремнувший тюлбпан", image: "./img/flowers/vzdremnuvshy-tulpan.jpg", size: "30x40", format: 'Бумага, пастель', author: 'Скворцова Татьяна' },
+        { name: "Желтый напиток", image: "./img/flowers/zgelty-napitok.jpg", size: "39x30", format: 'Бумага, пастель', author: 'Скворцова Татьяна' },
         { name: "Натюрморт «Золотистый»", image: "./img/flowers/36h24-Buket-v-zolotistyh-tonah.jpg", size: "36x24", format: 'Бумага, пастель', author: 'Скворцова Татьяна' },
         { name: "Пионы на голубом", image: "./img/flowers/38h52-Piony-na-golubom.jpg", size: "38x52", format: 'Бумага, пастель', author: 'Скворцова Татьяна' },
         { name: "Аккорд из полевых цветов", image: "./img/flowers/28h40-Akkord-iz-polevyh-tsvetov.jpg", size: "28x40", format: 'Бумага, пастель', author: 'Скворцова Татьяна' },

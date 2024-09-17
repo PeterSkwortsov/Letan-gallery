@@ -10,6 +10,7 @@ import Flowers from "./components/Flowers";
 import Animals from "./components/Animals";
 import Blog from "./components/Blog";
 import { useState } from "react";
+import TownHistory from "./components/Town-history";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -55,6 +56,10 @@ function App() {
               <Route
                 path="winter"
                 element={<WinterCollect cart={cart} addToCart={addToCart} />}
+              />
+              <Route
+                path="town"
+                element={<TownHistory cart={cart} addToCart={addToCart} />}
               />
               <Route path="blog" element={<Blog />} />
               <Route path="*" element={<h6>Такой страницы нет</h6>} />

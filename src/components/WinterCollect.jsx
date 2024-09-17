@@ -19,7 +19,7 @@ const WinterCollect = ({cart, addToCart}) => {
 
    const [page, setPage] = useState(1);
 
-   const itemsPerPage = 9;
+   const itemsPerPage = 12;
    const pagesCount = Math.ceil(winter.collections.length / itemsPerPage);
 
    const itemsShowed = winter.collections.slice(

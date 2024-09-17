@@ -17,7 +17,7 @@ const Flowers = ({cart, addToCart}) => {
 
  const [page, setPage] = useState(1);
 
- const itemsPerPage = 6;
+ const itemsPerPage = 9;
  const pagesCount = Math.ceil(flowers.collections.length / itemsPerPage);
 
  const itemsShowed = flowers.collections.slice(

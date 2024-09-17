@@ -19,7 +19,7 @@ const Skvortsova = ({ cart, addToCart }) => {
 
  const [page, setPage] = useState(1);
 
- const itemsPerPage = 9;
+ const itemsPerPage = 12;
  const pagesCount = Math.ceil(scvor.collections.length / itemsPerPage);
 
  const itemsShowed = scvor.collections.slice(

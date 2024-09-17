@@ -95,18 +95,19 @@ h2 {
 }
 
 .tags {
-  list-style: none;
-    padding: 0;
-    text-align: center;
-    gap: 1rem;
-    justify-content: center;
-    max-width: 1000px;
-    padding: rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
+list-style: none;
+  padding: 0;
+  text-align: center;
+  gap: 1rem;
+  justify-content: center;
+  padding: rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 nav:hover {
@@ -127,7 +128,9 @@ li {
 
 }
 
-li:hover {
+li:hover, 
+li:active,
+li:focus {
       color: white;
       font-weight: bold;
       background-color: #1d1d1d;
@@ -183,12 +186,14 @@ a:hover {
     justify-content: center;
       align-items: center;
 }
-.btn-main:hover {
-  
+.btn-main:hover,
+.btn-main:focus,
+.btn-main:active {
+
     background-color: #1d1d1d;
-    color: white
-    
+    color: white;
 }
+
 
 .collection {
   width: 100%;;
@@ -252,7 +257,7 @@ a:hover {
 
 .search-input {
   font-size: 16px;
-  width: 250px;
+  width: 210px;
   height: 50px;
   padding: 0 15px;
   border-radius: 10px;
@@ -346,7 +351,7 @@ align-items: stretch;
 
 .btnCircleX {
   position: relative;
-    right: -50%;
+    right: -52%;
     width: 30px;
     height: 30px;
     cursor: pointer;
@@ -534,6 +539,7 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
       margin: 0 auto;
       padding: 1rem;
       text-align: center;
+      padding: 50px;
     }
 
       .btn-main {
@@ -554,7 +560,7 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
         .likes-wrapper {
      
           grid-template-columns: repeat(2, 1fr);
-        
+        padding: 0;
         }
 
     
@@ -621,9 +627,9 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
       grid-template-columns: 1fr 1fr;
     }
          .likes-wrapper {
-    
+    grid-column-gap: 1rem;
+      grid-row-gap: 1rem;
           grid-template-columns: repeat(2, 1fr);
-            margin-top: 30rem;
     
          }
 
@@ -672,10 +678,13 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
 .likes-wrapper {
 
   grid-template-columns: repeat(1, 1fr);
-  margin-top: 75rem;
 
 }
 
+.tags .shop-cart {
+  padding: 1.3rem;
+  margin: 0;
+}
 
           
   }
@@ -683,7 +692,7 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
  
 .likes-wrapper {
 
-  margin-top: 35rem;
+  /* margin-top: 35rem; */
 
 }
 

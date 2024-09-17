@@ -8,6 +8,24 @@ const winter =
     "collections": [
         
         { name: "Первый снег", image: "./img/winter-landscapes/Pervyj-sneg.-Avtor-Tatyana-Skvortsova.-Material-bumaga.-Tehnika-pastel.-Razmery-32h25.jpg", page: 3, size: "32x25", format: 'Бумага, пастель' },
+        { name: "Арка", image: "./img/winter-landscapes/arka.jpg", page: 3, size: "33x23", format: 'Бумага, пастель' },
+        { name: "Багряные дали", image: "./img/winter-landscapes/bagryanye-daly.jpg", page: 3, size: "32x25", format: 'Бумага, пастель' },
+        { name: "Банька", image: "./img/winter-landscapes/banyka.jpg", page: 3, size: "36x25", format: 'Бумага, пастель' },
+        { name: "Ночь в Хобалево", image: "./img/winter-landscapes/noch-v-habalevo.jpg", page: 3, size: "37x29", format: 'Бумага, пастель' },
+        { name: "Оттепель и котик", image: "./img/winter-landscapes/ottepel-i-kotik.jpg", page: 3, size: "39x32", format: 'Бумага, пастель' },
+        { name: "Пушистый снег", image: "./img/winter-landscapes/pyshiaty-sneg.jpg", page: 3, size: "32x25", format: 'Бумага, пастель' },
+        { name: "Снежная церковь", image: "./img/winter-landscapes/snegnaya-cercov.jpg", page: 3, size: "49x35", format: 'Бумага, пастель' },
+        { name: "Снежная дровеница", image: "./img/winter-landscapes/snegnaya-drovenica.jpg", page: 3, size: "32x25", format: 'Бумага, пастель' },
+        { name: "Толстая собачка", image: "./img/winter-landscapes/tolstaya-sobachka.jpg", page: 3, size: "46х36", format: 'Бумага, пастель' },
+        { name: "Весенние деревья", image: "./img/winter-landscapes/vesenye-derevya.jpg", page: 3, size: "37x30", format: 'Бумага, пастель' },
+        { name: "Зимнее Хобалево", image: "./img/winter-landscapes/xobalevo-zimnye.jpg", page: 3, size: "40x32", format: 'Бумага, пастель' },
+        { name: "Зимнее солнце", image: "./img/winter-landscapes/zymnee-solnce.jpg", page: 3, size: "32x25", format: 'Бумага, пастель' },
+        { name: "Снежная елочка", image: "./img/winter-landscapes/snow-elochka.jpg", page: 3, size: "23x30", format: 'Бумага, пастель' },
+        { name: "Снежный кремль", image: "./img/winter-landscapes/snegny-kremlin.jpg", page: 3, size: "37x27", format: 'Бумага, пастель' },
+
+
+
+
         { name: "Апрель в Чкаловске", image: "./img/winter-landscapes/Aprel-v-CHkalovske-24h32-kopiya.jpg", page: 3, size: "24x32", format: 'Бумага, пастель' },
         { name: "Лыковая дамба", image: "./img/winter-landscapes/7000r.jpg", page: 3, size: "44x31", format: 'Бумага, пастель' },
         { name: "Солнышко пробилось", image: "./img/winter-landscapes/6000j.jpg", page: 3, size: "30x21", format: 'Бумага, пастель' },
