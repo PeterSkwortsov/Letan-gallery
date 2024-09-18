@@ -19,9 +19,7 @@ const Header = ({cart, removeFromCart}) => {
             <Link to="/" className="title-main">
               <span>каталог картин</span>
               <br></br>
-              <h1>
-                ЛЕОНИДА КОЛОСОВА и ТАТЬЯНЫ СКВОРЦОВОЙ
-              </h1>
+              <h1>ЛЕОНИДА КОЛОСОВА и ТАТЬЯНЫ СКВОРЦОВОЙ</h1>
             </Link>
           </div>
           <nav
@@ -57,23 +55,24 @@ const Header = ({cart, removeFromCart}) => {
               {<img src={book} alt="book" className="book" />}
             </Link>
 
-            <FcLikePlaceholder
-              className={`shop-cart-button ${cartOpen && "active"}`}
-              onClick={() => setCartOpen((cartOpen = !cartOpen))}
-            />
-
-            <span
-              style={{
-                color: "black",
-                marginLeft: "-10px",
-                borderRadius: "50%",
-                padding: "5px 9px",
-                border: "1px solid black",
-                backgroundColor: "aliceblue",
-              }}
-            >
-              {cart.length}
-            </span>
+              <div>
+                <FcLikePlaceholder
+                  className={`shop-cart-button ${cartOpen && "active"}`}
+                  onClick={() => setCartOpen((cartOpen = !cartOpen))}
+                />
+                <span
+                  style={{
+                    color: "black",
+                    marginLeft: "-10px",
+                    borderRadius: "50%",
+                    padding: "5px 9px",
+                    border: "1px solid black",
+                    backgroundColor: "aliceblue",
+                  }}
+                >
+                  {cart.length}
+                </span>
+              </div>
 
             {cartOpen && (
               <div className="shop-cart">

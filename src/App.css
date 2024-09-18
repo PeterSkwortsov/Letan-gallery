@@ -642,7 +642,6 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
         justify-content: center;
           flex-wrap: wrap;
           gap: 10px;
-          margin-top: -2rem;
         }
 .biography-main {
   flex-direction: column;
@@ -652,7 +651,6 @@ box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: -3rem;
 }
 
 .biography-leonid-list {

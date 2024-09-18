@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import scvor from "../data/scvor";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "./CustomModal/GalleryClick/Modal";
 import pag from "../components/Pagination/Pagination.module.css";
-
+import GridLoader from "react-spinners/GridLoader";
 
 
 const Skvortsova = ({ cart, addToCart }) => {
@@ -16,10 +16,11 @@ const Skvortsova = ({ cart, addToCart }) => {
  };
 
  const [searchValue, setSearchValue] = useState("");
+const [isLoading, setIsLoading] = useState(false);
 
  const [page, setPage] = useState(1);
 
- const itemsPerPage = 12;
+ const itemsPerPage = 9;
  const pagesCount = Math.ceil(scvor.collections.length / itemsPerPage);
 
  const itemsShowed = scvor.collections.slice(
@@ -30,6 +31,16 @@ const Skvortsova = ({ cart, addToCart }) => {
  function handleAddToCart(el) {
    addToCart(el);
  }
+
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
+
+
 
  return (
    <>
@@ -66,37 +77,55 @@ const Skvortsova = ({ cart, addToCart }) => {
      </ul>
 
      <div className="wrapper">
+      
        {itemsShowed
-         .filter((obj) =>
-           obj.name.toLowerCase().includes(searchValue.toLowerCase())
-         )
-         .map((item, index) => {
-           return (
-             <div className="wrapper-images" key={index}>
-               <img
-                 src={item.image}
-                 alt={item.name}
-                 onClick={() => handleClick(item, index)}
-               />
-               <h4>{item.name}</h4>
-               <h5>{item.size}</h5>
-               <p>{item.format}</p>
-               <p>{item.author}</p>
+           .filter((obj) =>
+             obj.name.toLowerCase().includes(searchValue.toLowerCase())
+           )
+           .map((item, index) => {
+             return (
+               <div className="wrapper-images" key={index}>
+                 {isLoading ? (
+                   <GridLoader
+                     color="#79d9cc"
+                     style={{
+                       margin: "0 auto",
+                       display: "flex",
+                       padding: "30px",
+                       justifyContent: "center",
+                       alignItems: "center",
+                     }}
+                     size={50}
+                   ></GridLoader>
+                 ) : (
+                   isLoading !== item.image && (
+                     <img
+                       src={item.image}
+                       alt={item.name}
+                       onClick={() => handleClick(item, index)}
+                     />
+                   )
+                 )}
 
-               <button
-                 href="#"
-                 onClick={() => handleAddToCart(item)}
-                 className={pag.button + " " + pag.typeA}
-               >
-                 <div className={pag.button__line}></div>
-                 <div className={pag.button__line}></div>
-                 <p className={pag.button__text}>Нравится</p>
-                 <div className={pag.button__drow1}></div>
-                 <div className={pag.button__drow2}></div>
-               </button>
-             </div>
-           );
-         })}
+                 <h4>{item.name}</h4>
+                 <h5>{item.size}</h5>
+                 <p>{item.format}</p>
+                 <p>{item.author}</p>
+                 <button
+                   href="#"
+                   onClick={() => handleAddToCart(item)}
+                   className={pag.button + " " + pag.typeA}
+                 >
+                   <div className={pag.button__line}></div>
+                   <div className={pag.button__line}></div>
+                   <p className={pag.button__text}>Нравится</p>
+                   <div className={pag.button__drow1}></div>
+                   <div className={pag.button__drow2}></div>
+                 </button>
+               </div>
+             );
+           })}
+
        {clickImg && (
          <Modal
            clickImg={clickImg}
