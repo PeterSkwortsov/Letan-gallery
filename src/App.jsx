@@ -97,6 +97,10 @@ function App() {
                 element={<Flowers cart={cart} addToCart={addToCart} />}
               />
               <Route
+                path="flowers/:path"
+                element={<Flowers cart={cart} addToCart={addToCart} />}
+              />
+              <Route
                 path="animals"
                 element={<Animals cart={cart} addToCart={addToCart} />}
               />

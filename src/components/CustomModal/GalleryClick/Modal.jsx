@@ -1,50 +1,33 @@
-import xIcon from '../../../images/x.png';
-import { useEffect, useState } from 'react';
-import GridLoader from 'react-spinners/GridLoader';
+import xIcon from "../../../images/x.png"; 
+import Img from "../..//Img.jsx";
+import { useNavigate, useLocation } from "react-router-dom";
+const Modal = ({ clickImg, setClickImg }) => { 
+  const navigate = useNavigate();
+  const location = useLocation();
 
+  const handleClick = (e) => {
+    if (e.target.classList.contains("dismiss")) {
+      setClickImg(null);
+    }
 
+     const parentPath = location.pathname.substring(
+       0,
+       location.pathname.lastIndexOf("/")
+     );
 
-const Modal = ({ clickImg, setClickImg }) => {
+     // Выполняем редирект на родительский путь
+     navigate(parentPath);
+  }; 
 
-    const [isLoading, setIsLoading] = useState(false);
-    
-    const handleClick = (e) => {
-      if (e.target.classList.contains("dismiss")) {
-        setClickImg(null);
-      }
-    };
-
-    useEffect(() => {
-      setIsLoading(true);
-      setTimeout(() => {
-        setIsLoading(false);
-      }, 2000);
-    }, []);
-    
-    return (
-      <>
-        (
-        <div className="overlay dismiss" onClick={handleClick}>
-          {isLoading ? (
-            <GridLoader
-              color="#79d9cc"
-              style={{
-                margin: "0 auto",
-                display: "flex",
-                padding: "30px",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-              size={50}
-            ></GridLoader>
-          ) : (
-            <img src={clickImg} alt="Большое изображение"></img>
-          )}
-        </div>
-        )
-      </>
-    );
+  return (
+    <>
+      (
+      <div className="overlay dismiss" onClick={handleClick}>
+        <Img src={clickImg} alt="Большое изображение" />
+      </div>
+      )
+    </>
+  );
 };
 
-
-export default Modal
+export default Modal;

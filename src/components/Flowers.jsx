@@ -2,43 +2,36 @@ import { Link } from "react-router-dom";
 import flowers from "../data/flowers";
 import { useState, useEffect } from "react";
 import Modal from "./CustomModal/GalleryClick/Modal";
-import pag from '../components/Pagination/Pagination.module.css'
-import GridLoader from "react-spinners/GridLoader";
-
-const Flowers = ({cart, addToCart}) => {
+import pag from "../components/Pagination/Pagination.module.css";
+import Img from "./Img";
+import {useNavigate} from "react-router-dom";
+const Flowers = ({ cart, addToCart }) => {
   const [searchValue, setSearchValue] = useState("");
   const [clickImg, setClickImg] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(null);
-const [isLoading, setIsLoading] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(null); 
+ const navigate = useNavigate();
+  
+  const handleClick = (item, index) => {
+    setCurrentIndex(index);
+    setClickImg(item.image);
+    navigate(`${item.path}`);
+  };
 
- const handleClick = (item, index) => {
-   setCurrentIndex(index);
-   setClickImg(item.image);
- };
+  const [page, setPage] = useState(1);
 
- const [page, setPage] = useState(1);
+  const itemsPerPage = 9;
+  const pagesCount = Math.ceil(flowers.collections.length / itemsPerPage);
 
- const itemsPerPage = 9;
- const pagesCount = Math.ceil(flowers.collections.length / itemsPerPage);
+  const itemsShowed = flowers.collections.slice(
+    (page - 1) * itemsPerPage,
+    page * itemsPerPage
+  );
 
- const itemsShowed = flowers.collections.slice(
-   (page - 1) * itemsPerPage,
-   page * itemsPerPage
- );
+  function handleAddToCart(el) {
+    addToCart(el);
+  }
 
- function handleAddToCart(el) {
-   addToCart(el);
- }
  
- 
-   useEffect(() => {
-     setIsLoading(true);
-     setTimeout(() => {
-       setIsLoading(false);
-     }, 2000);
-   }, []);
-
-
 
   return (
     <>
@@ -81,28 +74,12 @@ const [isLoading, setIsLoading] = useState(false);
           )
           .map((item, index, key) => {
             return (
-              <div className="wrapper-images" key={index}>
-                {isLoading ? (
-                  <GridLoader
-                    color="#79d9cc"
-                    style={{
-                      margin: "0 auto",
-                      display: "flex",
-                      padding: "30px",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                    size={50}
-                  ></GridLoader>
-                ) : (
-                  isLoading !== item.image && (
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      onClick={() => handleClick(item, index)}
-                    />
-                  )
-                )}
+              <div className="wrapper-images" key={item.image}>
+                <Img
+                  src={item.image}
+                  alt={item.name}
+                  onClick={() => handleClick(item, index)}
+                />
                 <h4>{item.name}</h4>
                 <h5>{item.size}</h5>
                 <p>{item.format}</p>
