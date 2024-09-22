@@ -4,17 +4,21 @@ import { useState, useEffect } from "react";
 import Modal from "./CustomModal/GalleryClick/Modal";
 import pag from '../components/Pagination/Pagination.module.css'
 import GridLoader from "react-spinners/GridLoader";
+import Img from "./Img";
+import { useNavigate } from "react-router-dom";
+
+
 const Animals = ({ cart, addToCart }) => {
+  const [searchValue, setSearchValue] = useState("");
   const [clickImg, setClickImg] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
-const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleClick = (item, index) => {
     setCurrentIndex(index);
     setClickImg(item.image);
+    navigate(`${item.path}`);
   };
-
-  const [searchValue, setSearchValue] = useState("");
 
   const [page, setPage] = useState(1);
 
@@ -29,18 +33,6 @@ const [isLoading, setIsLoading] = useState(false);
   function handleAddToCart(el) {
     addToCart(el);
   }
-
-    
-   useEffect(() => {
-     setIsLoading(true);
-     setTimeout(() => {
-       setIsLoading(false);
-     }, 2000);
-   }, []);
-
-
-
-
 
   return (
     <>
@@ -81,30 +73,14 @@ const [isLoading, setIsLoading] = useState(false);
           .filter((obj) =>
             obj.name.toLowerCase().includes(searchValue.toLowerCase())
           )
-          .map((item, index) => {
+          .map((item, index, key) => {
             return (
-              <div className="wrapper-images" key={index}>
-                {isLoading ? (
-                  <GridLoader
-                    color="#79d9cc"
-                    style={{
-                      margin: "0 auto",
-                      display: "flex",
-                      padding: "30px",
-                      justifyContent: "center",
-                      alignItems: "center",
-                    }}
-                    size={50}
-                  ></GridLoader>
-                ) : (
-                  isLoading !== item.image && (
-                    <img
-                      src={item.image}
-                      alt={item.name}
-                      onClick={() => handleClick(item, index)}
-                    />
-                  )
-                )}
+              <div className="wrapper-images" key={item.image}>
+                <Img
+                  src={item.image}
+                  alt={item.name}
+                  onClick={() => handleClick(item, index)}
+                />
                 <h4>{item.name}</h4>
                 <h5>{item.size}</h5>
                 <p>{item.format}</p>

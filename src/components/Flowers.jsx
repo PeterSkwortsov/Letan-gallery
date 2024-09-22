@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import flowers from "../data/flowers";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Modal from "./CustomModal/GalleryClick/Modal";
 import pag from "../components/Pagination/Pagination.module.css";
 import Img from "./Img";
@@ -19,7 +19,7 @@ const Flowers = ({ cart, addToCart }) => {
 
   const [page, setPage] = useState(1);
 
-  const itemsPerPage = 9;
+  const itemsPerPage = 12;
   const pagesCount = Math.ceil(flowers.collections.length / itemsPerPage);
 
   const itemsShowed = flowers.collections.slice(
@@ -125,7 +125,6 @@ const Flowers = ({ cart, addToCart }) => {
         </li>
       </ul>
 
-      {/* <Pagination cart={cart} addToCart={addToCart}/> */}
     </>
   );
 };

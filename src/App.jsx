@@ -89,6 +89,18 @@ function App() {
                 element={<Kolosov cart={cart} addToCart={addToCart} />}
               />
               <Route
+                path="kolosov/:path"
+                element={<Kolosov cart={cart} addToCart={addToCart} />}
+              />
+              <Route
+                path="skvortsova"
+                element={<Skvortsova cart={cart} addToCart={addToCart} />}
+              />
+              <Route
+                path="skvortsova/:path"
+                element={<Skvortsova cart={cart} addToCart={addToCart} />}
+              />
+              <Route
                 path="skvortsova"
                 element={<Skvortsova cart={cart} addToCart={addToCart} />}
               />
@@ -105,11 +117,23 @@ function App() {
                 element={<Animals cart={cart} addToCart={addToCart} />}
               />
               <Route
+                path="animals/:path"
+                element={<Animals cart={cart} addToCart={addToCart} />}
+              />
+              <Route
                 path="winter"
                 element={<WinterCollect cart={cart} addToCart={addToCart} />}
               />
               <Route
+                path="winter/:path"
+                element={<WinterCollect cart={cart} addToCart={addToCart} />}
+              />
+              <Route
                 path="town"
+                element={<TownHistory cart={cart} addToCart={addToCart} />}
+              />
+              <Route
+                path="town/:path"
                 element={<TownHistory cart={cart} addToCart={addToCart} />}
               />
               <Route path="blog" element={<Blog />} />
