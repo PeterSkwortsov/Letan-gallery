@@ -1,26 +1,18 @@
 import { Link } from "react-router-dom";
 import book from "../images/book.svg";
 import { FcLikePlaceholder } from "react-icons/fc";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Favourites from "./Favourites";
 import xClose from "../images/x.svg";
 import xCloseCircle from "../images/circle-x.svg";
 import WinterCollect from "./WinterCollect";
 import Ryba from "../images/blog-img/ryba.jpg";
 import Ded from "../images/blog-img/10.jpg";
-// import { useLocalStorage } from "../hooks/useLocalStorage";
 
 const Header = ({ cart, removeFromCart }) => {
   let [cartOpen, setCartOpen] = useState(false);
 
-  // const [order, setCorder] = useLocalStorage([], 'order');
-
-  // const addToOrder = (id) => {
-  //   setCorder([...order, id]);
-  // };
-
-
-
+ 
 
   return (
     <>

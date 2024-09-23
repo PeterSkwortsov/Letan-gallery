@@ -5,6 +5,8 @@ import Modal from "./CustomModal/GalleryClick/Modal";
 import pag from "../components/Pagination/Pagination.module.css";
 import { useNavigate } from "react-router-dom";
 import Img from "./Img";
+
+
 const Kolosov = ({ cart, addToCart }) => {
   const [searchValue, setSearchValue] = useState("");
   const [clickImg, setClickImg] = useState(null);

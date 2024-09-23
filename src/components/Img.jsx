@@ -6,11 +6,6 @@ const Img = ({ src, alt = "image", className = "", onClick = () => {} }) => {
 
   const imgClassName = className + " " + (isLoading ? "loading" : "");
 
-  console.log("loading image", src);
-
-  if (!isLoading) {
-    console.log("image loaded", src);
-  }
   return (
     <>
       {isLoading ? (

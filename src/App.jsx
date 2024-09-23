@@ -1,24 +1,15 @@
 import { lazy, Suspense } from "react";
 import "./App.css";
-// import Kolosov from "./components/Kolosov";
-// import Skvortsova from "./components/Skvortsova";
+
 import { BrowserRouter, Outlet, Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
-// import Footer from "./components/Footer";
-// import Biography from "./components/Bio/Biography";
-// import WinterCollect from "./components/WinterCollect";
-// import Flowers from "./components/Flowers";
-// import Animals from "./components/Animals";
-// import Blog from "./components/Blog";
-import { useState } from "react";
-// import TownHistory from "./components/Town-history";
+import { useState, useEffect } from "react";
 import GridLoader from "react-spinners/GridLoader";
 
 const Biography = lazy(() => import("./components/Bio/Biography"));
 const Kolosov = lazy(() => import("./components/Kolosov"));
 const WinterCollect = lazy(() => import("./components/WinterCollect"));
 const TownHistory = lazy(() => import("./components/Town-history"));
-// const MainLayout = lazy(() => import("./layouts/MainLayout"));
 const Footer = lazy(() => import("./components/Footer"));
 const Blog = lazy(() => import("./components/Blog"));
 const Animals = lazy(() => import("./components/Animals"));
@@ -29,13 +20,23 @@ const Skvortsova = lazy(() => import("./components/Skvortsova"));
 function App() {
   const [cart, setCart] = useState([]);
 
+     useEffect(() => {
+      localStorage.setItem('cart', JSON.stringify(cart));
+    }, [cart]);  // добавляет в хранилище но сбрасывает при обновлении
+      
+
+
   const addToCart = (item) => {
     if (cart.find(el => el.name === item.name)) return
     setCart([...cart, item]);
+    localStorage.getItem("cart", JSON.stringify(cart));
+
   };
 
   const removeFromCart = (item) => {
     setCart(cart.filter((i) => i.name !== item.name));
+    localStorage.getItem("cart", JSON.stringify(cart));
+    
   };
 
   return (

@@ -1,7 +1,10 @@
 
 import x from "../images/x.svg";
+import { useState, useEffect } from "react";
 
 const Favourites = ({cart, removeFromCart}) => {
+
+ 
 
   if (cart.length === 0) {
     return (
