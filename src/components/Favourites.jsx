@@ -3,7 +3,21 @@ import x from "../images/x.svg";
 
 const Favourites = ({cart, removeFromCart}) => {
 
-
+  if (cart.length === 0) {
+    return (
+      <div className="likes-wrapper">
+        <h3
+          style={{
+            textAlign: "center",
+            padding: "1rem",
+            justifyContent: "center",
+          }}
+        >
+          В избранном пока нет картин
+        </h3>
+      </div>
+    );
+  }
 
   return (
     <>

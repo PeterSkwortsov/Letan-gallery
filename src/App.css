@@ -47,7 +47,6 @@ h2 {
 .title-header {
   display: flex;
   justify-content: center;
-  margin: 50px 0 50px 0;
   text-align: center;
   padding: 1rem;
 
@@ -59,11 +58,13 @@ h2 {
 }
 
 
+
 .shop-cart-button {
   transition: color, transform, 500ms ease;
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  z-index: 10;
 }
 
 .shop-cart-button:hover,
@@ -111,6 +112,8 @@ h2 {
   position: relative;
   padding-top: 70px;
   padding-bottom: 70px;
+  padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 nav:hover {
@@ -643,9 +646,7 @@ h6 {
 
 
 
-  .title-header {
-    margin: 50px 0 50px 0;
-  }
+ 
 
   .tags {
     justify-content: center;

@@ -29,6 +29,8 @@ const Kolosov = ({ cart, addToCart }) => {
 
   function handleAddToCart(el) {
     addToCart(el);
+      localStorage.setItem("number", JSON.stringify(el));
+
   }
 
   return (
