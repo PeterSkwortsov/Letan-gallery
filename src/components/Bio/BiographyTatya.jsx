@@ -151,7 +151,7 @@ const BiographyTatya = () => {
                   right: 0,
                   bottom: 0,
                   padding: "3rem",
-                  borderRadius: "0.5rem",
+                  borderRadius: "0.51rem",
                 },
                 content: {
                   position: "absolute",
