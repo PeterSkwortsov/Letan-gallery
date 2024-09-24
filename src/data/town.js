@@ -13,17 +13,18 @@ const town =
         { name: "Трескучий мороз в Арзамасе", image: "/img/town-history/33h50-Treskuchij-moroz-v-Arzamase.jpg", size: "33x50", format: 'Пастель', author: "Скворцова Татьяна" },
         { name: "Ростов Великий", image: "/img/town-history/35h27-Nochnoj-Rostov-Velikij-1.jpg", size: "35x27", format: 'Пастель', author: "Скворцова Татьяна" },
         { name: "Собор Александра Невского", image: "/img/town-history/36h29-holodnyj-vecher.jpg", size: "36x24", format: 'Пастель', author: "Скворцова Татьяна" },
-        { name: "Осеннее сияние", image: "/img/town-history/38h45-Osennee-siyanie.jpg", size: "38x45", format: 'Пастель', author: "Скворцова Татьяна" },
-        { name: "Городец. Оттепель", image: "/img/town-history/39h55-Gorodets.-Ottepel.jpg", size: "39x55", format: 'Акварель', author: "Скворцова Татьяна" },
         { name: "Перед закатом. Суздаль", image: "/img/town-history/48h30-Pered-zakatom.-Suzdal.jpg", size: "48x30", format: 'Пастель', author: "Скворцова Татьяна" },
-        { name: "Монастырь", image: "/img/town-history/50h39-Monastyr.jpg", size: "50x39", format: 'Пастель', author: "Скворцова Татьяна" },
         { name: "Вид с холма Гарибальди в Риме", image: "/img/town-history/315h25-Vid-s-holma-Garibaldi-v-Rime.jpg", size: "32x25", format: 'Пастель', author: "Скворцова Татьяна" },
-        { name: "Зимний звон", image: "/img/town-history/IMG_8042.jpg", size: "78x103", format: 'Пастель', author: "Леонид Колосов" },
-        { name: "Вечерний звон", image: "/img/town-history/IMG_8048.jpg", size: "90x110", format: 'Пастель', author: "Скворцова Татьяна" },
-        { name: "Контаурово", image: "/img/town-history/IMG_8062.jpg", size: "40x50", format: 'Пастель', author: "Скворцова Татьяна" },
-        { name: "Ростов", image: "/img/town-history/Rumyanyj-yanvar-v-Rostove-41h285.jpg", size: "41x28", format: 'Пастель', author: "Скворцова Татьяна" },
+        { name: "Зимний звон", image: "/img/town-history/IMG_8042.jpg", size: "78x103", format: 'Масло', author: "Леонид Колосов" },
+        { name: "Вечерний полет", image: "/img/town-history/IMG_8048.jpg", size: "90x110", format: 'Масло', author: "Скворцова Татьяна" },
+        { name: "Контаурово", image: "/img/town-history/IMG_8062.jpg", size: "40x50", format: 'Масло', author: "Леонид Колосов" },
+        { name: "Площадь в Ростове Великом", image: "/img/town-history/Rumyanyj-yanvar-v-Rostove-41h285.jpg", size: "41x28", format: 'Пастель', author: "Скворцова Татьяна" },
         { name: "Собор в Борисоглебском", image: "/img/town-history/Sobor-v-Borisoglebskom-38h29-e1589537108391.jpg", size: "38x29", format: 'Пастель', author: "Скворцова Татьяна" },
-        { name: "Весна во Флоренции", image: "/img/town-history/Vesna-vo-Florentsii.-Hudozhnik-Tatyana-Skvortsova.-Material-holst.-Tehnika-maslo.-Razmery-35h25.jpg", size: "32x25", format: 'Пастель', author: "Скворцова Татьяна" },
+        { name: "Весна во Флоренции", image: "/img/town-history/Vesna-vo-Florentsii.-Hudozhnik-Tatyana-Skvortsova.-Material-holst.-Tehnika-maslo.-Razmery-35h25.jpg", size: "32x25", format: 'Масло', author: "Скворцова Татьяна" },
+        { name: "Ноябрь. Покровка", image: "/img/town-history/byvshaya-rabota.jpg", size: "32x43", format: 'Пастель', path: 'the-old-job', author: 'Татьяна Скворцова' },  
+        {
+            name: "Лыковая дамба", image: "/img/town-history/7000r.jpg", size: "44x31", format: 'Бумага, пастель', path: 'lykov-dam', author: 'Татьяна Скворцова'
+        },
 
 
     ],

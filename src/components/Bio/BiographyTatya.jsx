@@ -7,9 +7,17 @@ import pastel from '../../images/IconPalette2.svg';
 import tat from '../../images/ImgTatyana2.png'
 import image1 from "../../images/ImgPicture1.jpg";
 import image2 from "../../images/ImgPicture2.jpg";
+import { useState } from 'react';
+import Modal from '../CustomModal/GalleryClick/Modal';
+import Img
 
-
+from '../Img';
 const BiographyTatya = () => {
+
+    const [clickImg, setClickImg] = useState(null);
+
+
+
     return (
       <>
         <div className="white-blok">

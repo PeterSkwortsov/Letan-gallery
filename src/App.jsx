@@ -20,24 +20,29 @@ const Skvortsova = lazy(() => import("./components/Skvortsova"));
 function App() {
   const [cart, setCart] = useState([]);
 
-     useEffect(() => {
-      localStorage.setItem('cart', JSON.stringify(cart));
-    }, [cart]);  // добавляет в хранилище но сбрасывает при обновлении
-      
-
+    
 
   const addToCart = (item) => {
     if (cart.find(el => el.name === item.name)) return
     setCart([...cart, item]);
-    localStorage.getItem("cart", JSON.stringify(cart));
+
 
   };
 
   const removeFromCart = (item) => {
     setCart(cart.filter((i) => i.name !== item.name));
-    localStorage.getItem("cart", JSON.stringify(cart));
-    
   };
+
+
+   useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+   }, [cart]); // добавляет в хранилище но сбрасывает при обновлении
+
+   useEffect(() => {
+     localStorage.getItem("cart", JSON.stringify(cart));
+   }, [cart]);
+
+  
 
   return (
     <>
@@ -60,7 +65,7 @@ function App() {
                     />
                   }
                 >
-                  <MainLayout cart={cart} removeFromCart={removeFromCart} />
+                  <MainLayout cart={cart} removeFromCart={removeFromCart}  />
                 </Suspense>
               }
             >

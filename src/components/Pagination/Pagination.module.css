@@ -20,9 +20,34 @@
 
 
 
-.typeA {
-    --line_color: #1b1919;
-        --back_color: #E9ECFF
+.typeLeto {
+    --line_color: #efecec;
+        --back_color: #AFD275;
+}
+.typeFantstic {
+    --line_color: #efecec;
+        --back_color: #8b75cf;
+        
+}
+.typeTown {
+    --line_color: #efecec;
+        --back_color: #C2CAD0;
+        
+}
+.typeWinner {
+    --line_color: #efecec;
+        --back_color: #7395AE;
+        
+}
+.typeFlowers {
+    --line_color: #efecec;
+        --back_color: #AC3B61;
+        
+}
+.typeAnimals {
+    --line_color: #efecec;
+        --back_color: #E98074;
+        
 }
 
 
@@ -140,6 +165,7 @@
     z-index: -1;
     border-radius: 16px;
     transform-origin: 16px 16px;
+            opacity: 0.5;
 }
 
 .button__drow1 {

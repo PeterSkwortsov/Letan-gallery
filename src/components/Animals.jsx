@@ -6,6 +6,7 @@ import pag from '../components/Pagination/Pagination.module.css'
 import GridLoader from "react-spinners/GridLoader";
 import Img from "./Img";
 import { useNavigate } from "react-router-dom";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 
 const Animals = ({ cart, addToCart }) => {
@@ -34,8 +35,18 @@ const Animals = ({ cart, addToCart }) => {
     addToCart(el);
   }
 
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
+
   return (
     <>
+      <motion.div className="progress-bar" style={{ scaleX }} />
+
       <h2>Сказочные животные</h2>
 
       <div className="search">
@@ -68,7 +79,7 @@ const Animals = ({ cart, addToCart }) => {
         </li>
       </ul>
 
-      <div className="wrapper">
+      <div className="wrapper" style={{ scaleX }}>
         {itemsShowed
           .filter((obj) =>
             obj.name.toLowerCase().includes(searchValue.toLowerCase())
@@ -89,11 +100,11 @@ const Animals = ({ cart, addToCart }) => {
                 <button
                   href="#"
                   onClick={() => handleAddToCart(item)}
-                  className={pag.button + " " + pag.typeA}
+                  className={pag.button + " " + pag.typeAnimals}
                 >
                   <div className={pag.button__line}></div>
                   <div className={pag.button__line}></div>
-                  <p className={pag.button__text}>Нравится</p>
+                  <p className={pag.button__text}>В избранное</p>
                   <div className={pag.button__drow1}></div>
                   <div className={pag.button__drow2}></div>
                 </button>
