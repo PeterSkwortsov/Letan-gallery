@@ -162,7 +162,7 @@ const BiographyTatya = () => {
                   border: "1px solid #bbb",
                   overflow: "auto",
                   WebkitOverflowScrolling: "touch",
-                  borderRadius: "2rem",
+                  borderRadius: "1.9rem",
                   outline: "none",
                   padding: 0,
                 },
