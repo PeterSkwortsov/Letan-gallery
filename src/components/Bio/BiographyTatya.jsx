@@ -8,14 +8,37 @@ import tat from '../../images/ImgTatyana2.png'
 import image1 from "../../images/ImgPicture1.jpg";
 import image2 from "../../images/ImgPicture2.jpg";
 import { useState } from 'react';
-import Modal from '../CustomModal/GalleryClick/Modal';
-import Img
+import pag from '../Pagination/Pagination.module.css';
+import Modal from 'react-modal';
 
-from '../Img';
 const BiographyTatya = () => {
 
-    const [clickImg, setClickImg] = useState(null);
+   const [modalIsOpen, setModalIsOpen] = useState(false);
 
+   const openModal = () => {
+     setModalIsOpen(true);
+   };
+
+   const closeModal = () => {
+     setModalIsOpen(false);
+   };
+
+   const modalContent = (
+     <div className="modal-block">
+       <img src={image1} className="modal-img" style={{ width: "100%", padding: "1.3rem", maxWidth: "800px" }}></img>
+
+
+       <button
+         href="#"
+         onClick={closeModal}
+         className={pag.button + " " + pag.typeFlowers}
+       >
+         <div className={pag.button__line}></div>
+         <div className={pag.button__line}></div>
+         <p className={pag.button__text}>Закрыть</p>
+       </button>
+     </div>
+   );
 
 
     return (
@@ -114,7 +137,41 @@ const BiographyTatya = () => {
 
         <div className="grid-img">
           <div className="grid-img-block">
-            <img className="grid-img-img" src={image1} alt="картина" />
+            <img
+              className="grid-img-img"
+              src={image1}
+              onClick={openModal}
+            ></img>
+            <Modal
+              style={{
+                overlay: {
+                  position: "fixed",
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  padding: "3rem",
+                  borderRadius: "0.5rem",
+                },
+                content: {
+                  position: "absolute",
+                  top: "10px",
+                  left: "10px",
+                  right: "10px",
+                  bottom: "10px",
+                  border: "1px solid #bbb",
+                  overflow: "auto",
+                  WebkitOverflowScrolling: "touch",
+                  borderRadius: "2rem",
+                  outline: "none",
+                  padding: 0,
+                },
+              }}
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
+            >
+              {modalContent}
+            </Modal>
             <h5>Картина «Февральские лучи»</h5>
           </div>
 
