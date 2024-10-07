@@ -7,7 +7,6 @@ import { useNavigate } from "react-router-dom";
 import Img from "./Img";
 import { motion, useScroll, useSpring } from "framer-motion";
 
-
 const Kolosov = ({ cart, addToCart }) => {
   const [searchValue, setSearchValue] = useState("");
   const [clickImg, setClickImg] = useState(null);
@@ -32,8 +31,7 @@ const Kolosov = ({ cart, addToCart }) => {
 
   function handleAddToCart(el) {
     addToCart(el);
-      localStorage.setItem("number", JSON.stringify(el));
-
+    localStorage.setItem("number", JSON.stringify(el));
   }
 
   const { scrollYProgress } = useScroll();
@@ -42,7 +40,6 @@ const Kolosov = ({ cart, addToCart }) => {
     damping: 30,
     restDelta: 0.001,
   });
-
 
   return (
     <>
@@ -63,11 +60,12 @@ const Kolosov = ({ cart, addToCart }) => {
         />
       </div>
 
-      <ul className={pag.all}>
-        <li className={pag.page}>
+      <div className={pag.all}>
+        <ul className={pag.page}>
           {[...Array(pagesCount)].map((_, i) => {
             return (
               <li
+                key={i}
                 onClick={() => setPage(i + 1)}
                 className={
                   pag.page === i + 1 ? { ...pag.page, active: true } : ""
@@ -77,15 +75,15 @@ const Kolosov = ({ cart, addToCart }) => {
               </li>
             );
           })}
-        </li>
-      </ul>
+        </ul>
+      </div>
 
       <div className="wrapper">
         {itemsShowed
           .filter((obj) =>
             obj.name.toLowerCase().includes(searchValue.toLowerCase())
           )
-          .map((item, index, key) => {
+          .map((item, index) => {
             return (
               <div className="wrapper-images" key={item.image}>
                 <Img
@@ -121,11 +119,12 @@ const Kolosov = ({ cart, addToCart }) => {
         )}
       </div>
 
-      <ul className={pag.all}>
-        <li className={pag.page}>
+      <div className={pag.all}>
+        <ul className={pag.page}>
           {[...Array(pagesCount)].map((_, i) => {
             return (
               <li
+                key={i}
                 onClick={() => setPage(i + 1)}
                 className={
                   pag.page === i + 1 ? { ...pag.page, active: true } : ""
@@ -135,13 +134,10 @@ const Kolosov = ({ cart, addToCart }) => {
               </li>
             );
           })}
-        </li>
-      </ul>
+        </ul>
+      </div>
     </>
   );
 };
 
-
-
 export default Kolosov;
-

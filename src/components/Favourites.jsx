@@ -8,7 +8,7 @@ const Favourites = ({cart, removeFromCart}) => {
 
   if (cart.length === 0) {
     return (
-      <div className="likes-wrapper">
+      <>
         <h3
           style={{
             textAlign: "center",
@@ -18,7 +18,9 @@ const Favourites = ({cart, removeFromCart}) => {
         >
           В избранном пока нет картин
         </h3>
-      </div>
+
+        <div className="likes-wrapper"></div>
+      </>
     );
   }
 
@@ -29,6 +31,7 @@ const Favourites = ({cart, removeFromCart}) => {
           textAlign: "center",
           padding: "1rem",
           justifyContent: "center",
+          marginBottom: "1rem",
         }}
       >
         Добавьте картины в избранное

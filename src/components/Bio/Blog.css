@@ -47,6 +47,7 @@ gap: 80px;
         /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
         z-index: 1;
         text-align: center;
+        font-size: 1.2em;
 }
 .item-element a {
     text-decoration: none;      
@@ -81,12 +82,11 @@ content: '';
 
 
 .item-element img{
-max-width: 400px;
+max-width: 350px;
 filter: brightness(55%);
 border-radius: 10%;
     object-fit: cover;
-padding: 0.3rem;
-    background-color: white;
+padding: 1rem;
 }
 
 

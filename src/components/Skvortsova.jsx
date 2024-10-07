@@ -7,7 +7,6 @@ import Img from "./Img";
 import { useNavigate } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
 
-
 const Skvortsova = ({ cart, addToCart }) => {
   const [searchValue, setSearchValue] = useState("");
   const [clickImg, setClickImg] = useState(null);
@@ -22,6 +21,8 @@ const Skvortsova = ({ cart, addToCart }) => {
 
   const [page, setPage] = useState(1);
 
+  const isInCart = (item) => cart.some((el) => el.name === item.name);
+
   const itemsPerPage = 12;
   const pagesCount = Math.ceil(scvor.collections.length / itemsPerPage);
 
@@ -34,13 +35,12 @@ const Skvortsova = ({ cart, addToCart }) => {
     addToCart(el);
   }
 
-   const { scrollYProgress } = useScroll();
-   const scaleX = useSpring(scrollYProgress, {
-     stiffness: 100,
-     damping: 30,
-     restDelta: 0.001,
-   });
-
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   return (
     <>
@@ -65,6 +65,7 @@ const Skvortsova = ({ cart, addToCart }) => {
           {[...Array(pagesCount)].map((_, i) => {
             return (
               <li
+                key={i}
                 onClick={() => setPage(i + 1)}
                 className={
                   pag.page === i + 1 ? { ...pag.page, active: true } : ""
@@ -82,7 +83,7 @@ const Skvortsova = ({ cart, addToCart }) => {
           .filter((obj) =>
             obj.name.toLowerCase().includes(searchValue.toLowerCase())
           )
-          .map((item, index, key) => {
+          .map((item, index) => {
             return (
               <div className="wrapper-images" key={item.image}>
                 <Img
@@ -102,7 +103,9 @@ const Skvortsova = ({ cart, addToCart }) => {
                 >
                   <div className={pag.button__line}></div>
                   <div className={pag.button__line}></div>
-                  <p className={pag.button__text}>В избранное</p>
+                  <p className={pag.button__text}>
+                    {isInCart(item) ? "Сохранено" : "Добавить"}
+                  </p>
                   <div className={pag.button__drow1}></div>
                   <div className={pag.button__drow2}></div>
                 </button>
@@ -123,6 +126,7 @@ const Skvortsova = ({ cart, addToCart }) => {
           {[...Array(pagesCount)].map((_, i) => {
             return (
               <li
+                key={i}
                 onClick={() => setPage(i + 1)}
                 className={
                   pag.page === i + 1 ? { ...pag.page, active: true } : ""
@@ -138,4 +142,4 @@ const Skvortsova = ({ cart, addToCart }) => {
   );
 };
 
-export default Skvortsova
+export default Skvortsova;

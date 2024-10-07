@@ -16,33 +16,23 @@ const Animals = lazy(() => import("./components/Animals"));
 const Flowers = lazy(() => import("./components/Flowers"));
 const Skvortsova = lazy(() => import("./components/Skvortsova"));
 
+const initialCart = JSON.parse(localStorage.getItem("cart") || "[]");
 
 function App() {
-  const [cart, setCart] = useState([]);
-
-    
+  const [cart, setCart] = useState(initialCart);
 
   const addToCart = (item) => {
-    if (cart.find(el => el.name === item.name)) return
+    if (cart.find((el) => el.name === item.name)) return;
     setCart([...cart, item]);
-
-
   };
 
   const removeFromCart = (item) => {
     setCart(cart.filter((i) => i.name !== item.name));
   };
 
-
-   useEffect(() => {
+  useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
-   }, [cart]); // добавляет в хранилище но сбрасывает при обновлении
-
-   useEffect(() => {
-     localStorage.getItem("cart", JSON.stringify(cart));
-   }, [cart]);
-
-  
+  }, [cart]); // добавляет в хранилище но сбрасывает при обновлении
 
   return (
     <>
@@ -65,7 +55,7 @@ function App() {
                     />
                   }
                 >
-                  <MainLayout cart={cart} removeFromCart={removeFromCart}  />
+                  <MainLayout cart={cart} removeFromCart={removeFromCart} />
                 </Suspense>
               }
             >
