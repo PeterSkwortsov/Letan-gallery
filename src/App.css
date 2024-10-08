@@ -196,7 +196,8 @@ h2 {
   }
 
   .header_nav-item:nth-child(n+1) {
-      font-size: small;
+      font-size: 0.9rem;
+        text-align: center;
   }
 
   .header_nav-item:hover {
@@ -793,7 +794,7 @@ h6 {
 @media screen and (max-width: 1024px) {
 
   .wrapper {
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .title-main h1 {
@@ -858,6 +859,7 @@ h6 {
 
   }
 
+   
 
 
  
@@ -911,18 +913,17 @@ h6 {
     position: absolute;
     margin: 0;
   }
-
+    .title-header {
+      background: white;
+    }
 
 }
 
 @media screen and (max-width: 350px) {
 
-  .likes-wrapper {
-
-    /* margin-top: 35rem; */
-
-  }
-
+    .title-header {
+      background: white;
+    }
 
 
 }

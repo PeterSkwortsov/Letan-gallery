@@ -10,18 +10,33 @@ import Icon3 from '../../images/IconPicture.svg';
 import icon4 from '../../images/IconJuice.svg'
 import icon5 from '../../images/IconBook.svg'
 import BiographyTatya from './BiographyTatya';
+import { delay, motion } from 'framer-motion';
+import { useRef } from "react";
 
 import './Biography.css'
 const Biography = () => {
 
+     const textAnimation = {
+       hidden: {
+        x: -400,
+         opacity: 0
+       },
+       visible: {
+         x: 0,
+         opacity: 1,
+         duration: 4,
+       },
+     }
+
+
      return (
        <>
-         <section className="biography">
+         <motion.section className="biography" initial="hidden" whileInView="visible">
            <div className="biography-main">
-             <div className="biography-img">
-               <h2>Леонид Колосов</h2>
+             <motion.div variants={textAnimation} className="biography-img">
+               <motion.h2 variants={textAnimation}>Леонид Колосов</motion.h2>
                <img src={leonid}></img>
-             </div>
+             </motion.div>
 
              <ul className="biography-leonid-list">
                <li>
@@ -144,7 +159,7 @@ const Biography = () => {
                </ul>
              </div>
            </div>
-         </section>
+         </motion.section>
 
          <BiographyTatya />
        </>
