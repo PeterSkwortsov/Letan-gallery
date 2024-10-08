@@ -33,6 +33,8 @@ const Skvortsova = ({ cart, addToCart }) => {
 
   function handleAddToCart(el) {
     addToCart(el);
+   localStorage.setItem("number", JSON.stringify(el));
+
   }
 
   const { scrollYProgress } = useScroll();
@@ -60,23 +62,24 @@ const Skvortsova = ({ cart, addToCart }) => {
         />
       </div>
 
-      <ul className={pag.all}>
-        <li className={pag.page}>
+      <div className={pag.all}>
+        <ul className={pag.page}>
           {[...Array(pagesCount)].map((_, i) => {
             return (
               <li
                 key={i}
                 onClick={() => setPage(i + 1)}
                 className={
-                  pag.page === i + 1 ? { ...pag.page, active: true } : ""
+                  pag.page === i + 1 ? { ...pag.page, 
+                    active: true } : ""
                 }
               >
                 {i + 1}
               </li>
             );
           })}
-        </li>
-      </ul>
+        </ul>
+      </div>
 
       <div className="wrapper">
         {itemsShowed
@@ -121,8 +124,8 @@ const Skvortsova = ({ cart, addToCart }) => {
         )}
       </div>
 
-      <ul className={pag.all}>
-        <li className={pag.page}>
+      <div className={pag.all}>
+        <ul className={pag.page}>
           {[...Array(pagesCount)].map((_, i) => {
             return (
               <li
@@ -136,8 +139,8 @@ const Skvortsova = ({ cart, addToCart }) => {
               </li>
             );
           })}
-        </li>
-      </ul>
+        </ul>
+      </div>
     </>
   );
 };

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import data from "../data/data";
 import Modal from "./CustomModal/GalleryClick/Modal";
 import pag from "../components/Pagination/Pagination.module.css";
@@ -20,6 +20,8 @@ const Kolosov = ({ cart, addToCart }) => {
   };
 
   const [page, setPage] = useState(1);
+
+  const isInCart = (item) => cart.some((el) => el.name === item.name);
 
   const itemsPerPage = 12;
   const pagesCount = Math.ceil(data.collections.length / itemsPerPage);
@@ -103,7 +105,10 @@ const Kolosov = ({ cart, addToCart }) => {
                 >
                   <div className={pag.button__line}></div>
                   <div className={pag.button__line}></div>
-                  <p className={pag.button__text}>В избранное</p>
+                  <p className={pag.button__text}>
+                    {" "}
+                    {isInCart(item) ? "Сохранено" : "Добавить"}
+                  </p>
                   <div className={pag.button__drow1}></div>
                   <div className={pag.button__drow2}></div>
                 </button>

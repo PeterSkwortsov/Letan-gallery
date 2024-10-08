@@ -23,6 +23,9 @@ const Animals = ({ cart, addToCart }) => {
 
   const [page, setPage] = useState(1);
 
+    const isInCart = (item) => cart.some((el) => el.name === item.name);
+
+
   const itemsPerPage = 9;
   const pagesCount = Math.ceil(animals.collections.length / itemsPerPage);
 
@@ -33,6 +36,8 @@ const Animals = ({ cart, addToCart }) => {
 
   function handleAddToCart(el) {
     addToCart(el);
+        localStorage.setItem("number", JSON.stringify(el));
+
   }
 
   const { scrollYProgress } = useScroll();
@@ -62,11 +67,12 @@ const Animals = ({ cart, addToCart }) => {
         />
       </div>
 
-      <ul className={pag.all}>
-        <li className={pag.page}>
+      <div className={pag.all}>
+        <ul className={pag.page}>
           {[...Array(pagesCount)].map((_, i) => {
             return (
               <li
+                key={i}
                 onClick={() => setPage(i + 1)}
                 className={
                   pag.page === i + 1 ? { ...pag.page, active: true } : ""
@@ -76,8 +82,8 @@ const Animals = ({ cart, addToCart }) => {
               </li>
             );
           })}
-        </li>
-      </ul>
+        </ul>
+      </div>
 
       <div className="wrapper" style={{ scaleX }}>
         {itemsShowed
@@ -104,7 +110,10 @@ const Animals = ({ cart, addToCart }) => {
                 >
                   <div className={pag.button__line}></div>
                   <div className={pag.button__line}></div>
-                  <p className={pag.button__text}>В избранное</p>
+                  <p className={pag.button__text}>
+                    {" "}
+                    {isInCart(item) ? "Сохранено" : "Добавить"}
+                  </p>
                   <div className={pag.button__drow1}></div>
                   <div className={pag.button__drow2}></div>
                 </button>
@@ -120,11 +129,12 @@ const Animals = ({ cart, addToCart }) => {
         )}
       </div>
 
-      <ul className={pag.all}>
-        <li className={pag.page}>
+      <div className={pag.all}>
+        <ul className={pag.page}>
           {[...Array(pagesCount)].map((_, i) => {
             return (
               <li
+                key={i}
                 onClick={() => setPage(i + 1)}
                 className={
                   pag.page === i + 1 ? { ...pag.page, active: true } : ""
@@ -134,8 +144,8 @@ const Animals = ({ cart, addToCart }) => {
               </li>
             );
           })}
-        </li>
-      </ul>
+        </ul>
+      </div>
     </>
   );
 };

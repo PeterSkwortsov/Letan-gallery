@@ -6,10 +6,14 @@ import Favourites from "./Favourites";
 import xClose from "../images/x.svg";
 import xCloseCircle from "../images/circle-x.svg";
 import Menu from "../images/menu.svg";
-import WinterCollect from "./WinterCollect";
-import Ryba from "../images/blog-img/ryba.jpg";
-import Ded from "../images/blog-img/10.jpg";
-import Reka from "../images/blog-img/12.jpg";
+import Ryba from "../images/blog-img/fon/ryba.jpg";
+import Ded from "../images/blog-img/fon/10.jpg";
+import Reka from "../images/blog-img/fon/12.jpg";
+import Hram from "../images/blog-img/fon/IMG_8062.jpg";
+import Cvet from "../images/blog-img/fon/cvet.jpg";
+import Street from "../images/blog-img/fon/Dvorik.jpg";
+import Sneg from "../images/blog-img/fon/Snegovik.jpg";
+import Sovet from "../images/blog-img/fon/sovetam.jpg";
 import { useLocation } from "react-router-dom";
 
 const Header = ({ cart, removeFromCart }) => {
@@ -17,7 +21,7 @@ const Header = ({ cart, removeFromCart }) => {
   const [isOpen, setOpen] = useState(false);
   const location = useLocation();
 
-  console.log(location);
+  // console.log(location);
 
   const section = location.pathname.split("/").filter(Boolean)?.[0];
 
@@ -30,6 +34,21 @@ const Header = ({ cart, removeFromCart }) => {
       break;
     case "winter":
       image = Reka;
+      break;
+    case "town":
+      image = Street;
+      break;
+    case "animals":
+      image = Sneg;
+      break;
+    case "skvortsova":
+      image = Hram;
+      break;
+    case "flowers":
+      image = Cvet;
+      break;
+    case "blog":
+      image = Sovet;
       break;
     default:
       image = Ryba;
@@ -128,7 +147,7 @@ const Header = ({ cart, removeFromCart }) => {
           {isOpen ? (
             <img src={xClose} alt="close" />
           ) : (
-            <img src={Menu} alt="menu" />
+            <img src={Menu} alt="menu" style={{ width: "30px" }}/>
           )}
         </button>
       </div>

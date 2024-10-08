@@ -10,7 +10,7 @@ import blinovka from "../images/blog-img/1-1.jpg";
 import skazochnic from "../images/blog-img/5.jpg";
 import pastel from "../images/blog-img/7-.jpg";
 import zima from "../images/blog-img/4.jpg";
-import les from "../images/blog-img/10.jpg";
+import les from "../images/blog-img/fon/10.jpg";
 import stena from "../images/blog-img/9.jpg";
 import crasnoe from "../images/blog-img/11.jpg";
 import nith from "../images/blog-img/12.jpg";
