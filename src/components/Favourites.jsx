@@ -1,7 +1,6 @@
 
 import x from "../images/x.svg";
-import { useState, useEffect } from "react";
-
+import {motion} from 'framer-motion';
 const Favourites = ({cart, removeFromCart}) => {
 
  
@@ -40,13 +39,18 @@ const Favourites = ({cart, removeFromCart}) => {
       <div className="likes-wrapper">
         {cart.map((el) => (
           <div className="likes-images">
-            <img
+            <motion.img
               className="btn-x"
               src={x}
               onClick={() => removeFromCart(el)}
               alt={el.name}
-            ></img>
-            <img src={el.image} alt={el.name} />
+              whileTap={{ scale: 0.95 }}
+            ></motion.img>
+            <motion.img
+              src={el.image}
+              alt={el.name}
+              whileTap={{ scale: 0.95 }}
+            />
             <h4>{el.name}</h4>
             <p>{el.size}</p>
             <p>{el.format}</p>

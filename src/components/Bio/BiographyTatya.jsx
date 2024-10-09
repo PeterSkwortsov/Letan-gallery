@@ -9,7 +9,7 @@ import image1 from "../../images/ImgPicture1.jpg";
 import image2 from "../../images/ImgPicture2.jpg";
 import { useState } from 'react';
 import pag from '../Pagination/Pagination.module.css';
-
+import { motion } from 'framer-motion';
 const BiographyTatya = () => {
 
 
@@ -59,8 +59,15 @@ const BiographyTatya = () => {
 
         <div className="biography-main-tat">
           <div className="biography-img">
-            <h2>Татьяна Скворцова</h2>
-            <img src={tatiana1}></img>
+            <motion.h2
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.1 }}
+              drag="x"
+              dragConstraints={{ left: -100, right: 100 }}
+            >
+              Татьяна Скворцова
+            </motion.h2>
+            <motion.img src={tatiana1} whileTap={{ scale: 0.95 }}></motion.img>
           </div>
 
           <ul className="biography-leonid-list">
@@ -100,7 +107,7 @@ const BiographyTatya = () => {
             работу, то впечатления, заставляющие и дома снова и снова браться за
             кисть
           </p>
-          <img src={tat}></img>
+          <motion.img src={tat} whileTap={{ scale: 0.95 }}></motion.img>
         </div>
 
         <div>
@@ -138,11 +145,12 @@ const BiographyTatya = () => {
 
         <div className="grid-img">
           <div className="grid-img-block">
-            <img
+            <motion.img
               className="grid-img-img"
               src={image1}
-            ></img>
- 
+              whileTap={{ scale: 0.95 }}
+            ></motion.img>
+
             <h5>Картина «Февральские лучи»</h5>
           </div>
 
@@ -162,11 +170,12 @@ const BiographyTatya = () => {
             потому что в своем творчестве мы такие разные
           </p>
           <div className="grid-img-block">
-            <img
+            <motion.img
               className="grid-img-img"
               src={image2}
-            ></img>
-           
+              whileTap={{ scale: 0.95 }}
+            ></motion.img>
+
             <h5>Картина «Тихая Славянка. Павловск»</h5>
           </div>
         </div>

@@ -15,7 +15,7 @@ import Street from "../images/blog-img/fon/Dvorik.jpg";
 import Sneg from "../images/blog-img/fon/Snegovik.jpg";
 import Sovet from "../images/blog-img/fon/sovetam.jpg";
 import { useLocation } from "react-router-dom";
-
+import { motion } from "framer-motion";
 const Header = ({ cart, removeFromCart }) => {
   let [cartOpen, setCartOpen] = useState(false);
   const [isOpen, setOpen] = useState(false);
@@ -59,9 +59,11 @@ const Header = ({ cart, removeFromCart }) => {
       <div className="top">
         <div className="title-header">
           <Link to="/" className="title-main">
-            <span>каталог картин</span>
+            <motion.span whileTap={{ scale: 0.95 }}>каталог картин</motion.span>
             <br></br>
-            <h1>ЛЕОНИДА КОЛОСОВА и ТАТЬЯНЫ СКВОРЦОВОЙ</h1>
+            <motion.h1 whileTap={{ scale: 0.95 }}>
+              ЛЕОНИДА КОЛОСОВА и ТАТЬЯНЫ СКВОРЦОВОЙ
+            </motion.h1>
           </Link>
         </div>
         <nav
@@ -99,7 +101,7 @@ const Header = ({ cart, removeFromCart }) => {
             </Link>
           </ul>
 
-          <div
+          <motion.div
             style={{
               display: "flex",
               alignItems: "center",
@@ -107,6 +109,7 @@ const Header = ({ cart, removeFromCart }) => {
               marginTop: "-1rem",
               padding: "1rem",
             }}
+            whileTap={{ scale: 0.95 }}
           >
             <FcLikePlaceholder
               className={`shop-cart-button ${cartOpen && "active"}`}
@@ -124,16 +127,18 @@ const Header = ({ cart, removeFromCart }) => {
             >
               {cart.length}
             </span>
-          </div>
+          </motion.div>
 
           {cartOpen && (
             <div className="shop-cart">
               <Favourites cart={cart} removeFromCart={removeFromCart} />
-              <img
+              <motion.img
                 src={xCloseCircle}
                 className="btnCircleX"
                 onClick={() => setCartOpen(false)}
                 alt="Закрыть окно"
+
+                whileTap={{ scale: 0.95 }}
               />
             </div>
           )}
@@ -145,9 +150,9 @@ const Header = ({ cart, removeFromCart }) => {
         >
           {" "}
           {isOpen ? (
-            <img src={xClose} alt="close" />
+            <img src={xClose} alt="close"/>
           ) : (
-            <img src={Menu} alt="menu" style={{ width: "30px" }}/>
+            <img src={Menu} alt="menu" style={{ width: "30px" }} />
           )}
         </button>
       </div>

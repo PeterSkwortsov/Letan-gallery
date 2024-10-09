@@ -16,31 +16,28 @@ import { useRef } from "react";
 import './Biography.css'
 const Biography = () => {
 
-     const textAnimation = {
-       hidden: {
-        x: -400,
-         opacity: 0
-       },
-       visible: {
-         x: 0,
-         opacity: 1,
-         duration: 4,
-       },
-     }
+     
 
 
      return (
        <>
-         <motion.section className="biography" initial="hidden" whileInView="visible">
+         <section className="biography" initial="hidden" whileInView="visible">
            <div className="biography-main">
-             <motion.div variants={textAnimation} className="biography-img">
-               <motion.h2 variants={textAnimation}>Леонид Колосов</motion.h2>
-               <img src={leonid}></img>
-             </motion.div>
+             <div className="biography-img">
+               <motion.h2
+                 whileHover={{ scale: 1.2 }}
+                 whileTap={{ scale: 1.1 }}
+                 drag="x"
+                 dragConstraints={{ left: -100, right: 100 }}
+               >
+                 Леонид Колосов
+               </motion.h2>
+               <motion.img src={leonid} whileTap={{ scale: 0.95 }}></motion.img>
+             </div>
 
              <ul className="biography-leonid-list">
                <li>
-                 <img src={iconPlanet}></img>
+                 <motion.img src={iconPlanet}></motion.img>
                  Родился в 1957 г. в селе Сорокино под Тюменской обл. В 50-х
                  годах переехал в город Керчь в Крыму, где и провел свою
                  молодость
@@ -80,13 +77,19 @@ const Biography = () => {
                19 лет, наконец-то смог в 2003 году полностью посветить себя
                живописи
              </p>
-             <img src={ImgLeonid2}></img>
+             <motion.img
+               src={ImgLeonid2}
+               whileTap={{ scale: 0.95 }}
+             ></motion.img>
            </div>
 
            <div className="mushroom-season">
              <div className="mushroom-img">
                <h3>Грибной сезон</h3>
-               <img src={ImgGMushroom}></img>
+               <motion.img
+                 src={ImgGMushroom}
+                 whileTap={{ scale: 0.95 }}
+               ></motion.img>
                <p>
                  Одной из первых серий картин стал «Грибной сезон». Потом
                  появились другие фантастические и мифологические сюжеты
@@ -136,7 +139,10 @@ const Biography = () => {
            </div>
 
            <div className="art-room">
-             <img src={ImgLeonid3}></img>
+             <motion.img
+               src={ImgLeonid3}
+               whileTap={{ scale: 0.95 }}
+             ></motion.img>
              <div className="room-items">
                <ul className="biography-leonid">
                  <li>
@@ -159,7 +165,7 @@ const Biography = () => {
                </ul>
              </div>
            </div>
-         </motion.section>
+         </section>
 
          <BiographyTatya />
        </>
