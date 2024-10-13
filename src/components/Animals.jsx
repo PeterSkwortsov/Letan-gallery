@@ -52,7 +52,7 @@ const Animals = ({ cart, addToCart }) => {
     <>
       <motion.div className="progress-bar" style={{ scaleX }} />
 
-      <h2>Сказочные животные</h2>
+      <h2>Сказочные создания</h2>
 
       <div className="search">
         <Link to="/" className="btn-main">
@@ -98,10 +98,10 @@ const Animals = ({ cart, addToCart }) => {
                   alt={item.name}
                   onClick={() => handleClick(item, index)}
                 />
+                <h5>{item.author}</h5>
                 <h4>{item.name}</h4>
-                <h5>{item.size}</h5>
                 <p>{item.format}</p>
-                <p>{item.author}</p>
+                <p>{item.size}</p>
 
                 <button
                   href="#"

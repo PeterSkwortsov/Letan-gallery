@@ -51,10 +51,11 @@ const Favourites = ({cart, removeFromCart}) => {
               alt={el.name}
               whileTap={{ scale: 0.95 }}
             />
+
+            <h5>{el.author}</h5>
             <h4>{el.name}</h4>
-            <p>{el.size}</p>
             <p>{el.format}</p>
-            <p>{el.author}</p>
+            <p>{el.size}</p>
           </div>
         ))}
       </div>

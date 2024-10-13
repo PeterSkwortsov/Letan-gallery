@@ -40,6 +40,12 @@ h2 {
   padding: 1rem;
 }
 
+h5 {
+  margin-top: 0.7rem;
+  font-size: medium;
+  text-align: center;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }
@@ -686,10 +692,9 @@ h6 {
 
 .wrapper-images h4 {
   margin: 0;
-  margin-top: 15px;
-  font-size: 20px;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  font-weight: unset;
 
 }
 
@@ -819,7 +824,6 @@ h6 {
   }
 
   .biography-block img {
-    max-width: 60%;
     margin-top: 2rem;
   }
 

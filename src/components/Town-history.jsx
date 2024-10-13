@@ -97,10 +97,10 @@ const TownHistory = ({ cart, addToCart }) => {
                   alt={item.name}
                   onClick={() => handleClick(item, index)}
                 />
+                <h5>{item.author}</h5>
                 <h4>{item.name}</h4>
-                <h5>{item.size}</h5>
                 <p>{item.format}</p>
-                <p>{item.author}</p>
+                <p>{item.size}</p>
 
                 <button
                   href="#"

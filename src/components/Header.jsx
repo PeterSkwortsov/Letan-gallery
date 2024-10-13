@@ -91,7 +91,7 @@ const Header = ({ cart, removeFromCart }) => {
               Цветы и натюрморты
             </Link>
             <Link className="header_nav-item" to="/animals">
-              Сказочные животные
+              Сказочные создания
             </Link>
             <Link className="header_nav-item" to="/town">
               Городские сюжеты
