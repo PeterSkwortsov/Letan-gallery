@@ -95,6 +95,7 @@ max-width: 600px;
     margin: 0 auto;
     gap: 80px;
     margin-top: 4rem;
+    flex-direction: row-reverse;
 }
 
  ul {

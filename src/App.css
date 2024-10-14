@@ -744,6 +744,9 @@ h6 {
   align-items: center;
   flex-direction: column;
   margin-top: 3rem;
+  background: black;
+  color: white;
+  text-align: center;
 }
 
 .footer-text span {

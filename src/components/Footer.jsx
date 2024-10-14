@@ -1,18 +1,47 @@
 import { useMatch } from 'react-router-dom';
 import tg from "../../src/images/telegramm.svg";
 import vk from '../../src/images/vk.svg'
+import xClose from "../images/x.svg";
+import cookie from "../components/Footer.module.css";
+import { useState } from "react";
+
 const Footer = () => {  
 
+ const [isShown, setIsShown] = useState(true);
 
+ const handleClick = (event) => {
+   setIsShown((current) => !current);
+
+ };    
 
     return (
       <>
-        <section className="footer">
+        <section>
+          {isShown && (
+    
+              <div>
+                <img
+                  onClick={handleClick}
+                  className={cookie.messages_cookies_close}
+                  src={xClose}
+                ></img>
+                <p className={cookie.messages_cookies}>
+                  Мы используем cookie-файлы, чтобы получить статистику, которая
+                  помогает нам улучшить сервис. Вы можете прочитать подробнее о
+                  cookie-файлах или изменить настройки браузера. Продолжая
+                  пользоваться сайтом без изменения настроек, вы даёте согласие
+                  на использование ваших cookie-файлов.
+                </p>
+              </div>
+           
+          )}
+          {isShown ? null : <></>}
+
           <div className="footer-text">
             <p>Личный каталог картин Леонида Колосова и Татьяны Скворцовой</p>
             <p>{new Date().getFullYear()} год</p>
 
-            <p>Пишите, звоните, мы на связи!</p>
+            <p style={{ fontWeight: "bold" }}>Пишите, звоните, мы на связи!</p>
             <a href="tel: +79047932712">+7 (904) 793-27-12</a>
 
             <div
