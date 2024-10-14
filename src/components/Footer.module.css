@@ -15,6 +15,12 @@
         font-size: 0.7rem;
         
 }
+.messages_cookies p{
+
+        z-index: 15;
+       
+        
+}
 
 .messages_cookies_wrp {
     position: relative;
@@ -38,4 +44,17 @@
             border-radius: 50%;
            
            
+}
+
+@media screen and (min-width: 1024px) { 
+.messages_cookies_close {
+        bottom: 20px;     
+}
+
+.messages_cookies {
+
+    font-size: 0.9rem;
+    padding: 0.5rem 3rem;
+
+}
 }
