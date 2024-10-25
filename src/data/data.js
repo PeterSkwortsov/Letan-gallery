@@ -1,10 +1,173 @@
 
-
 const dataImg = 
 
 {
+    
 
     "collections": [
+        {
+            name: "Осенняя семья", image: "/img/fantstic-canvas/IMG_0522.jpg", size: "100x100", path: 'osenya-family', format: 'Холст, масло', author: 'Леонид Колосов'},
+            {
+                name: "Огородный сторож", image: "/img/fantstic-canvas/IMG_0524.jpg", size: "60x80", format: 'Холст, масло', path: 'ogorodny-stotoge', author: 'Леонид Колосов'},
+            {
+                name: "Ольгин кот (вариант)", image: "/img/fantstic-canvas/IMG_0525.jpg", size: "44x36", format: 'Холст, масло', path: 'olg', author: 'Леонид Колосов'},
+            {
+                name: "Зимний сон", image: "/img/fantstic-canvas/IMG_0528.jpg", size: "70x94", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Утро реки", image: "/img/fantstic-canvas/IMG_0529.jpg", size: "48x78", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Гороховец", image: "/img/fantstic-canvas/IMG_0530.jpg", size: "40x30", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Беседка", image: "/img/fantstic-canvas/IMG_0531.jpg", size: "24x39", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "За водой", image: "/img/fantstic-canvas/IMG_0532.jpg", size: "50x68", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Натюрморт со сливами", image: "/img/fantstic-canvas/0533.jpg", size: "52x47", format: 'Холст, масло', path: 'naturmort-slyvy', author: 'Леонид Колосов'},
+            {
+                name: "Неопознанный натюрморт", image: "/img/fantstic-canvas/IMG_0534.jpg", size: "50x58", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Храм в Безводном", image: "/img/fantstic-canvas/IMG_0535.jpg", size: "40x50", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Отец", image: "/img/fantstic-canvas/IMG_0536.jpg", size: "33x48", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Озерный букет", image: "/img/fantstic-canvas/IMG_0537.jpg", size: "38x47", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Белые ночи", image: "/img/fantstic-canvas/IMG_0538.jpg", size: "60x80", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Яблочная ладья", image: "/img/fantstic-canvas/IMG_0540.jpg", size: "60x80", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Подводная ладья", image: "/img/fantstic-canvas/IMG_0541.jpg", size: "55x36", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Девушка с коромыслами", image: "/img/fantstic-canvas/IMG_0542.jpg", size: "100x70", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Брат и сестра", image: "/img/fantstic-canvas/IMG_0543.jpg", size: "105x90", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Спящая дева", image: "/img/fantstic-canvas/IMG_0544.jpg", size: "70x100", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Кикимора", image: "/img/fantstic-canvas/IMG_0545.jpg", size: "92x110", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Молодильные яблоки", image: "/img/fantstic-canvas/IMG_0546.jpg", size: "-", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Львенок", image: "/img/fantstic-canvas/IMG_0547.jpg", size: "65х80", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Натюрморт с гортензиями", image: "/img/fantstic-canvas/IMG_0548.jpg", size: "65х80", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Рождественская. Диптих", image: "/img/fantstic-canvas/IMG_0549.jpg", size: "114х51", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Отражение Бога", image: "/img/fantstic-canvas/IMG_0550.jpg", size: "100х90", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "После дождя", image: "/img/fantstic-canvas/IMG_0551.jpg", size: "119х79", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Парк", image: "/img/fantstic-canvas/IMG_0553.jpg", size: "50х70", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            
+            {
+                name: "На охоте", image: "/img/fantstic-canvas/IMG_0554.jpg", size: "90х70", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Ворожеи", image: "/img/fantstic-canvas/IMG_0555.jpg", size: "90х70", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Влюбленные", image: "/img/fantstic-canvas/IMG_0562.jpg", size: "70х90", format: 'Холст, масло', path: 'love', author: 'Леонид Колосов'},
+            {
+                name: "Жемчужина", image: "/img/fantstic-canvas/IMG_0558.jpg", size: "70х90", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Паруса", image: "/img/fantstic-canvas/IMG_0559.jpg", size: "70х60", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Лесовичок и зайцы", image: "/img/fantstic-canvas/IMG_0560.jpg", size: "90х135", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Огненная пара", image: "/img/fantstic-canvas/IMG_0561.jpg", size: "90х80", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Встреча", image: "/img/fantstic-canvas/IMG_0556.jpg", size: "50х70", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Зимние яблоки", image: "/img/fantstic-canvas/IMG_0563.jpg", size: "50х60", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Буся с друзьями", image: "/img/fantstic-canvas/IMG_0564.jpg", size: "60х72", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Портрет осени", image: "/img/fantstic-canvas/IMG_0565.jpg", size: "60х90", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Совушки", image: "/img/fantstic-canvas/IMG_0566.jpg", size: "100х80", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Утро с друзьями", image: "/img/fantstic-canvas/IMG_0567.jpg", size: "90х70", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Яблочный спас на Рождественской", image: "/img/fantstic-canvas/IMG_0549.jpg", size: "70х120", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Пейзаж солнечный", image: "/img/fantstic-canvas/IMG_0568.jpg", size: "50х60", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Натюрморт в облаках", image: "/img/fantstic-canvas/IMG_0569.jpg", size: "88х99", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Золотые рыбки", image: "/img/fantstic-canvas/IMG_0570.jpg", size: "88х116", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Лесные жители", image: "/img/fantstic-canvas/IMG_0571.jpg", size: "105х85", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Двое", image: "/img/fantstic-canvas/IMG_0572.jpg", size: "90х80", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Спаси и сохрани", image: "/img/fantstic-canvas/IMG_0573.jpg", size: "96х138", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Июль. 1941", image: "/img/fantstic-canvas/IMG_0574.jpg", size: "94х121", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Дождливая ночь", image: "/img/fantstic-canvas/IMG_0575.jpg", size: "65х60", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Артемовские луга", image: "/img/fantstic-canvas/IMG_0576.jpg", size: "130х90", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Давние дерева", image: "/img/fantstic-canvas/IMG_0577.jpg", size: "120х95", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Одуванчики", image: "/img/fantstic-canvas/IMG_0578.jpg", size: "120х80", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Путешествие", image: "/img/fantstic-canvas/IMG_0579.jpg", size: "92х122", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+                {
+                name: "Река", image: "/img/fantstic-canvas/IMG_0582.jpg", size: "90х100", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+                {
+                name: "Путь", image: "/img/fantstic-canvas/IMG_0581.jpg", size: "90х100", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Родной уголок", image: "/img/fantstic-canvas/IMG_0583.jpg", size: "122х105", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Зимняя ночь", image: "/img/fantstic-canvas/IMG_0586.jpg", size: "80х110", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Зимние трелли", image: "/img/fantstic-canvas/IMG_0587.jpg", size: "92х66", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Старый Нижний", image: "/img/fantstic-canvas/IMG_0588.jpg", size: "49х40", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Семена моря", image: "/img/fantstic-canvas/IMG_0589.jpg", size: "90х100", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Стога", image: "/img/fantstic-canvas/IMG_0590.jpg", size: "90х74", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Телец", image: "/img/fantstic-canvas/IMG_0591.jpg", size: "90х70", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Светволосая дева", image: "/img/fantstic-canvas/IMG_0592.jpg", size: "70х100", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Розовый закат", image: "/img/fantstic-canvas/IMG_0593.jpg", size: "64х97", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Подружки", image: "/img/fantstic-canvas/IMG_0594.jpg", size: "85х90", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Пушинки", image: "/img/fantstic-canvas/IMG_0595.jpg", size: "103х76", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Чувства", image: "/img/fantstic-canvas/IMG_0596.jpg", size: "98х73", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Мир, труд, май!", image: "/img/fantstic-canvas/IMG_0597.jpg", size: "80х100", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "После дождя", image: "/img/fantstic-canvas/IMG_0598.jpg", size: "110х80", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "За птицей", image: "/img/fantstic-canvas/IMG_0599.jpg", size: "78х116", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Отдых", image: "/img/fantstic-canvas/IMG_0600.jpg", size: "88х108", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Осеннее начало", image: "/img/fantstic-canvas/IMG_0601.jpg", size: "70х90", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Плывущие грибы", image: "/img/fantstic-canvas/IMG_0602.jpg", size: "90х100", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+            {
+                name: "Богатырь", image: "/img/fantstic-canvas/IMG_0603.jpeg", size: "83х105", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
         {
             name: "Аксинья и Медведь", image: "/img/fantstic-canvas/utrennyaya-rosa-120h90-80k.jpg", size: "120x90", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
         { name: "Садовники", image: "/img/fantstic-canvas/sadovniki-110h90-90k.jpg", size: "110x90", format: 'Холст, масло', path: 'gardeners' , author: 'Леонид Колосов'},
@@ -75,3 +238,5 @@ const dataImg =
  }
 
 export default dataImg 
+
+

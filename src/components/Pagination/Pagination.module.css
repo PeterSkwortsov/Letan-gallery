@@ -11,6 +11,7 @@
     cursor: pointer;
     max-width: 500px;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 /* li:hover {

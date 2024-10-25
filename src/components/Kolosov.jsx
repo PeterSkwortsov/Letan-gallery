@@ -23,7 +23,7 @@ const Kolosov = ({ cart, addToCart }) => {
 
   const isInCart = (item) => cart.some((el) => el.name === item.name);
 
-  const itemsPerPage = 12;
+  const itemsPerPage = 15;
   const pagesCount = Math.ceil(data.collections.length / itemsPerPage);
 
   const itemsShowed = data.collections.slice(
