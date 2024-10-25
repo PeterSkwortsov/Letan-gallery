@@ -43,7 +43,9 @@ const WinterCollect = ({ cart, addToCart }) => {
     restDelta: 0.001,
   });
 
-
+useEffect(() => {
+  document.title = "Зимние пейзажи";
+}, []);
 
   return (
     <>

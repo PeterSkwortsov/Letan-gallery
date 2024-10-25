@@ -47,7 +47,9 @@ const Animals = ({ cart, addToCart }) => {
     restDelta: 0.001,
   });
 
-
+useEffect(() => {
+  document.title = "Сказочные создания";
+}, []);
   return (
     <>
       <motion.div className="progress-bar" style={{ scaleX }} />

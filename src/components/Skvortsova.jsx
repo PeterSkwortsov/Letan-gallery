@@ -6,6 +6,7 @@ import pag from "../components/Pagination/Pagination.module.css";
 import Img from "./Img";
 import { useNavigate } from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
+import { useEffect } from "react";
 
 const Skvortsova = ({ cart, addToCart }) => {
   const [searchValue, setSearchValue] = useState("");
@@ -43,6 +44,10 @@ const Skvortsova = ({ cart, addToCart }) => {
     damping: 30,
     restDelta: 0.001,
   });
+
+   useEffect(() => {
+     document.title = "Летние пейзажи";
+   }, []);
 
   return (
     <>

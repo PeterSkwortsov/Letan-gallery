@@ -41,7 +41,7 @@ const Footer = () => {
             <p>{new Date().getFullYear()} год</p>
 
             <p style={{ fontWeight: "bold" }}>Пишите, звоните, мы на связи!</p>
-            <a href="tel: +79047932712">+7 (904) 793-27-12</a>
+            <p>+7 (904) 793-27-12</p>
 
             <div
               style={{

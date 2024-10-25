@@ -18,7 +18,7 @@ import pastel2 from "../images/blog-img/13.jpg";
 import goroh from "../images/blog-img/14.jpg";
 import oxota from "../images/blog-img/15.jpg";
 import { motion, useScroll, useSpring } from "framer-motion";
-
+import { useEffect } from "react";
 
 
 import BlogCss from "../components/Bio/Blog.css"
@@ -35,7 +35,9 @@ const Blog = () => {
      restDelta: 0.001,
    });
 
-
+useEffect(() => {
+  document.title = "Блог о творчестве";
+}, []);
 
    return (
      <>

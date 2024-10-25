@@ -54,9 +54,9 @@ const Header = ({ cart, removeFromCart }) => {
       image = Ryba;
   }
 
-  useEffect(() => {
-    document.title = 'Картины Л. Колосова и Т. Скворцовой'
-  }, []);
+ useEffect(() => {
+   document.title = "Каталог картин";
+ }, []);
 
   return (
     <>

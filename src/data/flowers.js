@@ -28,7 +28,7 @@ const flowers =
         {
             name: "Парящий букет", image: "/img/flowers/buket-par.jpg", size: "100x90", format: 'Холст, масло', author: 'Скворцова Татьяна', path: 'floating-bouquet' },
         {
-            name: "Букет с циниями", image: "/img/flowers/Buket-s-tsiniyami.-Hudozhnik-Tatyana-Skvortsova.-Material-bumaga.-Tehnika-pastel.-Razmery-36h49.jpg", size: "36x49", format: 'Бумага, пастель', author: 'Скворцова Татьяна', path: 'Bouquet-with cynias' },
+            name: "Букет с циниями", image: "/img/flowers/Buket-s-tsiniyami.-Hudozhnik-Tatyana-Skvortsova.-Material-bumaga.-Tehnika-pastel.-Razmery-36h49.jpg", size: "36x49", format: 'Бумага, пастель', author: 'Скворцова Татьяна', path: 'bouquet-with cynias' },
 
 
 

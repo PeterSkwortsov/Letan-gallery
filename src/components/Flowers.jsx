@@ -6,7 +6,7 @@ import pag from "../components/Pagination/Pagination.module.css";
 import Img from "./Img";
 import {useNavigate} from "react-router-dom";
 import { motion, useScroll, useSpring } from "framer-motion";
-
+import { useEffect } from "react";
 
 
 const Flowers = ({ cart, addToCart }) => {
@@ -47,6 +47,9 @@ const Flowers = ({ cart, addToCart }) => {
      restDelta: 0.001,
    });
 
+   useEffect(() => {
+     document.title = "Цветы и натюрморты";
+   }, []);
 
   return (
     <>

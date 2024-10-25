@@ -12,12 +12,14 @@ import icon5 from '../../images/IconBook.svg'
 import BiographyTatya from './BiographyTatya';
 import { delay, motion } from 'framer-motion';
 import { useRef } from "react";
-
+import { useEffect } from "react";
 import './Biography.css'
 const Biography = () => {
 
      
-
+useEffect(() => {
+  document.title = "Биография художников";
+}, []);
 
      return (
        <>

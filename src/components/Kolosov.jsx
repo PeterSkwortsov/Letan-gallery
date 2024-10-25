@@ -6,12 +6,17 @@ import pag from "../components/Pagination/Pagination.module.css";
 import { useNavigate } from "react-router-dom";
 import Img from "./Img";
 import { motion, useScroll, useSpring } from "framer-motion";
+import { useEffect } from "react";
 
 const Kolosov = ({ cart, addToCart }) => {
   const [searchValue, setSearchValue] = useState("");
   const [clickImg, setClickImg] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = 'Фантастические миры';
+  }, []);
 
   const handleClick = (item, index) => {
     setCurrentIndex(index);
@@ -93,7 +98,7 @@ const Kolosov = ({ cart, addToCart }) => {
                   alt={item.name}
                   onClick={() => handleClick(item, index)}
                 />
-               
+
                 <h5>{item.author}</h5>
                 <h4>{item.name}</h4>
                 <p>{item.format}</p>

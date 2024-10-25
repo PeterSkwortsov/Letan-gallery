@@ -46,7 +46,9 @@ const TownHistory = ({ cart, addToCart }) => {
    restDelta: 0.001,
  });
 
-
+useEffect(() => {
+  document.title = "Городские сюжеты";
+}, []);
 
   return (
     <>
