@@ -17,7 +17,25 @@ const animals =
         { name: "Прогулка", image: "/img/fabulous-animals/progulka-90h70-50k.jpg", size: "90x70", format: 'Холст, масло', path: "progulka", author: "Леонид Колосов"},
         { name: "Спасенный Град Китеж", image: "/img/fabulous-animals/Spasennyj-Grad-Kitezh.-Hudozhnik-Leonid-Kolosov.-Holstmaslo.-60h70.jpg", size: "70x60", format: 'Холст, масло', path: "spasennyj-grad-kitezh", author: "Леонид Колосов"},
         { name: "Валенки", image: "/img/fabulous-animals/Valenki.-Hudozhnik-Leonid-Kolosov.-Tehnika-maslo.-Razmery-70h90-1.jpg", size: "70x90", format: 'Холст, масло', path: "valenki", author: "Леонид Колосов"},
-     
+        
+        {
+            name: "Ольгин кот (вариант)", image: "/img/fabulous-animals/IMG_0525.jpg", size: "44x36", format: 'Холст, масло', path: 'olga-cat', author: 'Леонид Колосов'
+        },  // сказочные существа
+        {
+            name: "Львенок", image: "/img/fabulous-animals/IMG_0547.jpg", size: "65х80", format: 'Холст, масло', path: 'lion', author: 'Леонид Колосов'
+        }, // сказочные существа
+        {
+            name: "На охоте", image: "/img/fabulous-animals/IMG_0554.jpg", size: "90х70", format: 'Холст, масло', path: 'on-the-hunt', author: 'Леонид Колосов'
+        }, // сказочные существа
+        {
+            name: "Буся с друзьями", image: "/img/fabulous-animals/IMG_0564.jpg", size: "60х72", format: 'Холст, масло', path: 'busy awith friends', author: 'Леонид Колосов'
+        }, // сказочные существа
+        {
+            name: "Двое", image: "/img/fabulous-animals/IMG_0572.jpg", size: "90х80", format: 'Холст, масло', path: 'Two', author: 'Леонид Колосов'
+        }, // сказочные существа
+        {
+            name: "Зимние трелли", image: "/img/fabulous-animals/IMG_0587.jpg", size: "92х66", format: 'Холст, масло', path: 'Winter trills', author: 'Леонид Колосов'
+        }, // сказочные существа
 
     ],
 }

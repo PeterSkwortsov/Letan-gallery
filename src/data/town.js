@@ -25,6 +25,19 @@ const town =
         {
             name: "Лыковая дамба", image: "/img/town-history/7000r.jpg", size: "44x31", format: 'Бумага, бумага', path: 'lykov-dam', author: 'Татьяна Скворцова'
         },
+        {
+            name: "Черниговская улица", image: "/img/town-history/chernigovskaya.jpg", size: "40x60", format: 'Холст, масло', path: 'сhernigovskaya-ulitsa', author: 'Леонид Колосов'
+        },
+        {
+            name: "Гороховец", image: "/img/town-history/IMG_0530.jpg", size: "40x30", format: 'Холст, масло', path: 'gorokhovets', author: 'Леонид Колосов'
+        }, // в городские сюжеты
+
+        {
+            name: "Храм в Безводном", image: "/img/town-history/IMG_0535.jpg", size: "40x50", format: 'Холст, масло', path: 'the-temple-in-Bezvodny', author: 'Леонид Колосов'
+        }, // городские сюжеты
+        {
+            name: "Старый Нижний", image: "/img/town-history/IMG_0588.jpg", size: "49х40", format: 'Холст, масло', path: 'Old Nizhny', author: 'Леонид Колосов'
+        }, // городские сюжеты
 
 
     ],

@@ -7,7 +7,7 @@ const scvor =
     "collections": [
         {
             name: "Загадочная заводь", image: "/img/summer-landscapes/25h34-zagadochnaya-zavod.jpg", size: "25х34", format: 'Пастель, бумага', path: 'the-mysterious-backwater', author: 'Леонид Колосов'},
-        { name: "Вид на Суздаль", image: "/img/summer-landscapes/29h21-Vid-na-Suzdal.jpg", size: "29x21", format: 'Пастель, бумага', path: 'view-of-suzdal', author: 'Татьяна Скворцова' , author: 'Татьяна Скворцова'},
+        { name: "Вид на Суздаль", image: "/img/summer-landscapes/29h21-Vid-na-Suzdal.jpg", size: "29x21", format: 'Пастель, бумага', path: 'view-of-suzdal', author: 'Татьяна Скворцова'},
         {
             name: "Озеро Пурхма", image: "/img/summer-landscapes/48h34-Ozero-Purihma.jpg", size: "48x34", format: 'Пастель, бумага', path: 'lake-purkhma' , author: 'Татьяна Скворцова'},
         { name: "Паруса", image: "/img/summer-landscapes/73h91parusa-80000k.jpg", size: "73x91", format: 'Холст, Холст, масло', path: 'sails' , author: 'Леонид Колосов'},
@@ -62,7 +62,9 @@ const scvor =
         {
             name: "Я буду долго гнать велосипед", image: "/img/summer-landscapes/YA-budu-dolgo-gnat-velosiped-50h36.jpg", size: "50х36", format: 'Пастель, бумага', path: 'ride-a-bike' , author: 'Татьяна Скворцова'},
         { name: "Туманы на Оке", image: "/img/summer-landscapes/Tumany-na-Oke.-Hudozhnik-Leonid-Kolosov.-Tehnika-maslo.-Razmery-70h50-2.jpg", size: "70x50", format: 'Холст, масло', path: 'fog-at-Oke' , author: 'Леонид Колосов'},
-        
+        {
+            name: "Пейзаж солнечный", image: "/img/summer-landscapes/IMG_0568.jpg", size: "50х60", format: 'Холст, масло', path: 'The landscape is sunny', author: 'Леонид Колосов'
+        }, // летний пейзаж
 
 
 
@@ -84,7 +86,10 @@ const scvor =
         { name: "Розовые мальвы", image: "/img/summer-landscapes/rozovye-malvy.jpg", size: "30x40", format: 'Пастель, бумага', path: 'pink-birds' , author: 'Татьяна Скворцова'},  
         {
             name: "Зеленый закат", image: "/img/summer-landscapes/zeleny-i-zackat.jpg", size: "35x25", format: 'Пастель, бумага', path: 'a-green-sunset' , author: 'Татьяна Скворцова'},  
-        { name: "На опушке", image: "/img/summer-landscapes/zelyonaya-trava.jpg", size: "35х25", format: 'Пастель, бумага', path: 'green-grass' , author: 'Татьяна Скворцова'},  
+        { name: "На опушке", image: "/img/summer-landscapes/zelyonaya-trava.jpg", size: "35х25", format: 'Пастель, бумага', path: 'green-grass' , author: 'Татьяна Скворцова'}, 
+        {
+            name: "Беседка", image: "/img/summer-landscapes/IMG_0531.jpg", size: "24x39", format: 'Холст, масло', path: 'pavilion', author: 'Леонид Колосов'
+        }, // летние пейзажи 
     ],
 }
 

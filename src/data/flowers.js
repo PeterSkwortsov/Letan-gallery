@@ -54,9 +54,23 @@ const flowers =
         {
             name: "Розовый букет", image: "/img/flowers/rozes.jpg", page: 1, size: "77х50", format: 'Холст, масло', author: 'Леонид Колосов', path: 'pink-bouquet' },
         { name: "Семь яблок", image: "/img/flowers/seven-apple.jpg", page: 1, size: "30х40", format: 'Масло', author: 'Леонид Колосов', path: 'seven-apples' },
-        { name: "Яблоки и сливы", image: "/img/flowers/YAbloki.-Hudozhnik-Leonid-Kolosov.-Holstmaslo.-48h54.jpg", page: 3, size: "48х54", format: 'Масло', author: 'Леонид Колосов', path: 'apple-salad' },
+
         { name: "Январские розы", image: "/img/flowers/YAnvarskie-Rozy.-Avtor-Tatyana-Skvortsova.-Material-bumaga.-Tehnika-pastel.-Razmery-40h50.jpg", page: 3, size: "40х50", format: 'Бумага, пастель', author: 'Скворцова Татьяна', path: 'january-roses' },
 
+        
+
+        {
+            name: "Натюрморт со сливами", image: "/img/flowers/0533.jpg", size: "52x47", format: 'Холст, масло', path: 'still-life-with-plums', author: 'Леонид Колосов'
+        }, // цветы и натюрморты 
+        {
+            name: "Неопознанный натюрморт", image: "/img/flowers/IMG_0534.jpg", size: "50x58", format: 'Холст, масло', path: 'unidentified-still-life', author: 'Леонид Колосов'
+        },  // цветы и натюрморты 
+        {
+            name: "Озерный букет", image: "/img/flowers/IMG_0537.jpg", size: "38x47", format: 'Холст, масло', path: 'lake-bouquet', author: 'Леонид Колосов'
+        }, // цветы и натюрморты 
+        {
+            name: "Натюрморт с гортензиями", image: "/img/flowers/IMG_0548.jpg", size: "65х80", format: 'Холст, масло', path: 'still-life-with-hydrangeas', author: 'Леонид Колосов'
+        }, // цветы и натюрморты 
 
     ],
 
