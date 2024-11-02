@@ -82,25 +82,83 @@ const Header = ({ cart, removeFromCart }) => {
           }}
         >
           <ul className="header_nav-list">
-            <Link className="header_nav-item" to="/kolosov">
+            <Link
+              className="header_nav-item"
+              to="/kolosov"
+              onClick={() =>
+                window.ym(
+                  98800173,
+                  "reachGoal",
+                  "https://letan-art.com/kolosov"
+                )
+              }
+            >
               Фантастические миры
             </Link>
-            <Link className="header_nav-item" to="/skvortsova">
+            <Link
+              className="header_nav-item"
+              to="/skvortsova"
+              onClick={() =>
+                window.ym(
+                  98800173,
+                  "reachGoal",
+                  "https://letan-art.com/skvortsova"
+                )
+              }
+            >
               Летние пейзажи
             </Link>
-            <Link className="header_nav-item" to="/winter">
+            <Link
+              className="header_nav-item"
+              to="/winter"
+              onClick={() =>
+                window.ym(98800173, "reachGoal", "https://letan-art.com/winter")
+              }
+            >
               Зимние пейзажи
             </Link>
-            <Link className="header_nav-item" to="/flowers">
+            <Link
+              className="header_nav-item"
+              to="/flowers"
+              onClick={() =>
+                window.ym(
+                  98800173,
+                  "reachGoal",
+                  "https://letan-art.com/flowers"
+                )
+              }
+            >
               Цветы и натюрморты
             </Link>
-            <Link className="header_nav-item" to="/animals">
+            <Link
+              className="header_nav-item"
+              to="/animals"
+              onClick={() =>
+                window.ym(
+                  98800173,
+                  "reachGoal",
+                  "https://letan-art.com/animals"
+                )
+              }
+            >
               Сказочные создания
             </Link>
-            <Link className="header_nav-item" to="/town">
+            <Link
+              className="header_nav-item"
+              to="/town"
+              onClick={() =>
+                window.ym(98800173, "reachGoal", "https://letan-art.com/town")
+              }
+            >
               Городские сюжеты
             </Link>
-            <Link className="header_nav-item" to="/blog">
+            <Link
+              className="header_nav-item"
+              to="/blog"
+              onClick={() =>
+                window.ym(98800173, "reachGoal", "https://letan-art.com/blog")
+              }
+            >
               Художественные заметки
             </Link>
           </ul>
@@ -141,7 +199,6 @@ const Header = ({ cart, removeFromCart }) => {
                 className="btnCircleX"
                 onClick={() => setCartOpen(false)}
                 alt="Закрыть окно"
-
                 whileTap={{ scale: 0.95 }}
               />
             </div>
@@ -154,7 +211,7 @@ const Header = ({ cart, removeFromCart }) => {
         >
           {" "}
           {isOpen ? (
-            <img src={xClose} alt="close"/>
+            <img src={xClose} alt="close" />
           ) : (
             <img src={Menu} alt="menu" style={{ width: "30px" }} />
           )}

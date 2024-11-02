@@ -51,6 +51,7 @@ const Skvortsova = ({ cart, addToCart }) => {
 
   return (
     <>
+    
       <motion.div className="progress-bar" style={{ scaleX }} />
       <h2>Летние пейзажи</h2>
 

@@ -52,6 +52,13 @@ const Footer = () => {
                 gap: "1rem",
               }}
             >
+              <a href="https://t.me/+79047932712">
+                <img
+                  src={tg}
+                  alt="telegram"
+                  style={{ marginTop: "10px", marginBottom: "10px" }}
+                />
+              </a>
               <a href="https://t.me/+79300704428">
                 <img
                   src={tg}
@@ -59,17 +66,7 @@ const Footer = () => {
                   style={{ marginTop: "10px", marginBottom: "10px" }}
                 />
               </a>
-              <a href="https://vk.com/letan_gallery">
-                <img
-                  src={vk}
-                  alt="telegram"
-                  style={{
-                    marginTop: "10px",
-                    marginBottom: "10px",
-                    height: "100%",
-                  }}
-                />
-              </a>
+
             </div>
 
             <span>

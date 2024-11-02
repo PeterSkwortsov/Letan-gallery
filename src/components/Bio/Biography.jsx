@@ -1,17 +1,13 @@
 import leonid from '../../images/ImgLeonid1.jpg'
 import iconPlanet from '../../images/IconPlanet.svg';
 import iconPallete from '../../images/IconPalette.svg';
-import iconPlane from '../../images/IconPlane.svg';
 import ImgLeonid2 from '../../images/ImgLeonid2.png'
-import ImgGMushroom from '../../images/ImgGMushroom.jpg'
 import ImgLeonid3 from '../../images/ImgLeonid3.png';
 import Icon2 from '../../images/Group.svg';
 import Icon3 from '../../images/IconPicture.svg';
-import icon4 from '../../images/IconJuice.svg'
-import icon5 from '../../images/IconBook.svg'
+
 import BiographyTatya from './BiographyTatya';
-import { delay, motion } from 'framer-motion';
-import { useRef } from "react";
+import { motion } from 'framer-motion';
 import { useEffect } from "react";
 import './Biography.css'
 const Biography = () => {
@@ -23,7 +19,7 @@ useEffect(() => {
 
      return (
        <>
-         <section className="biography" initial="hidden" whileInView="visible">
+         <section className="biography" initial="hidden">
            <div className="biography-main">
              <div className="biography-img">
                <motion.h2
@@ -87,7 +83,7 @@ useEffect(() => {
                </ul>
                <ul>
                  <li>
-                   Заслуженный деятель культуры и искусства Нижнего Новгород
+                   Заслуженный деятель культуры и искусства Нижнего Новгорода
                  </li>
                </ul>
                <ul>

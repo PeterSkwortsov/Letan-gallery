@@ -73,8 +73,6 @@ const dataImg =
                 name: "Совушки", image: "/img/fantstic-canvas/IMG_0566.jpg", size: "100х80", format: 'Холст, масло', path: 'Owls', author: 'Леонид Колосов'},
             {
                 name: "Утро с друзьями", image: "/img/fantstic-canvas/IMG_0567.jpg", size: "90х70", format: 'Холст, масло', path: 'Morning with friends', author: 'Леонид Колосов'},
-            {
-                name: "Яблочный спас на Рождественской", image: "/img/fantstic-canvas/IMG_0549.jpg", size: "70х120", format: 'Холст, масло', path: 'The Apple Savior on Rozhdestvenskaya', author: 'Леонид Колосов'},
             
             {
                 name: "Натюрморт в облаках", image: "/img/fantstic-canvas/IMG_0569.jpg", size: "88х99", format: 'Холст, масло', path: 'Still life in the clouds', author: 'Леонид Колосов'},
@@ -84,7 +82,7 @@ const dataImg =
                 name: "Лесные жители", image: "/img/fantstic-canvas/IMG_0571.jpg", size: "105х85", format: 'Холст, масло', path: 'Forest dwellers', author: 'Леонид Колосов'},
             
             {
-                name: "Спаси и сохрани", image: "/img/fantstic-canvas/IMG_0573.jpg", size: "96х138", format: 'Холст, масло', path: 'Save and preserve', author: 'Леонид Колосов'},
+                name: "Спаси и сохрани", image: "/img/fantstic-canvas/IMG_0573.jpg", size: "96х138", format: 'ДВП, темпера', path: 'Save and preserve', author: 'Леонид Колосов'},
             {
                 name: "Июль. 1941", image: "/img/fantstic-canvas/IMG_0574.jpg", size: "94х121", format: 'Холст, масло', path: 'July. 1941', author: 'Леонид Колосов'},
             {
@@ -92,17 +90,17 @@ const dataImg =
             {
                 name: "Артемовские луга", image: "/img/fantstic-canvas/IMG_0576.jpg", size: "130х90", format: 'Холст, масло', path: 'Artemovsky meadows', author: 'Леонид Колосов'},
             {
-                name: "Давние дерева", image: "/img/fantstic-canvas/IMG_0577.jpg", size: "120х95", format: 'Холст, масло', path: 'Ancient trees', author: 'Леонид Колосов'},
+                name: "Древние дерева", image: "/img/fantstic-canvas/IMG_0577.jpg", size: "120х95", format: 'Холст, масло', path: 'Ancient trees', author: 'Леонид Колосов'},
             {
                 name: "Одуванчики", image: "/img/fantstic-canvas/IMG_0578.jpg", size: "120х80", format: 'Холст, масло', path: 'Dandelions', author: 'Леонид Колосов'},
             {
-                name: "Путешествие", image: "/img/fantstic-canvas/IMG_0579.jpg", size: "92х122", format: 'Холст, масло', path: 'Journey', author: 'Леонид Колосов'},
+                name: "Путешествие", image: "/img/fantstic-canvas/IMG_0579.jpg", size: "92х122", format: 'ДВП, темпера', path: 'Journey', author: 'Леонид Колосов'},
                 {
-                    name: "Река", image: "/img/fantstic-canvas/IMG_0582.jpg", size: "90х100", format: 'Холст, масло', path: 'River', author: 'Леонид Колосов'},
+                    name: "Река", image: "/img/fantstic-canvas/IMG_0582.jpg", size: "90х100", format: 'ДВП, темпера', path: 'River', author: 'Леонид Колосов'},
                 {
-                    name: "Путь", image: "/img/fantstic-canvas/IMG_0581.jpg", size: "90х100", format: 'Холст, масло', path: 'Way', author: 'Леонид Колосов'},
+                    name: "Путь", image: "/img/fantstic-canvas/IMG_0581.jpg", size: "90х100", format: 'ДВП, темпера', path: 'Way', author: 'Леонид Колосов'},
             {
-                name: "Родной уголок", image: "/img/fantstic-canvas/IMG_0583.jpg", size: "122х105", format: 'Холст, масло', path: 'Native corner', author: 'Леонид Колосов'},
+                name: "Родной уголок", image: "/img/fantstic-canvas/IMG_0583.jpg", size: "122х105", format: 'ДВП, темпера', path: 'Native corner', author: 'Леонид Колосов'},
             {
                 name: "Зимняя ночь", image: "/img/fantstic-canvas/IMG_0586.jpg", size: "80х110", format: 'Холст, масло', path: 'Winter Night', author: 'Леонид Колосов'},
             
@@ -116,7 +114,7 @@ const dataImg =
             {
                 name: "Светволосая дева", image: "/img/fantstic-canvas/IMG_0592.jpg", size: "70х100", format: 'Холст, масло', path: 'The blonde maiden', author: 'Леонид Колосов'},
             {
-                name: "Розовый закат", image: "/img/fantstic-canvas/IMG_0593.jpg", size: "64х97", format: 'Холст, масло', path: 'The blonde maiden', author: 'Леонид Колосов'},
+                name: "Розовый закат", image: "/img/fantstic-canvas/IMG_0593.jpg", size: "64х97", format: 'ДВП, темпера', path: 'The blonde maiden', author: 'Татьяна Скворцова'},
             {
                 name: "Подружки", image: "/img/fantstic-canvas/IMG_0594.jpg", size: "85х90", format: 'Холст, масло', path: 'Girlfriends', author: 'Леонид Колосов'},
             {
@@ -155,7 +153,6 @@ const dataImg =
             name: "Аксинья и Медведь", image: "/img/fantstic-canvas/utrennyaya-rosa-120h90-80k.jpg", size: "120x90", format: 'Холст, масло', path: 'aksinya-and-the-bear', author: 'Леонид Колосов'},
         { name: "Садовники", image: "/img/fantstic-canvas/sadovniki-110h90-90k.jpg", size: "110x90", format: 'Холст, масло', path: 'gardeners' , author: 'Леонид Колосов'},
         { name: "Рыбак", image: "/img/fantstic-canvas/rybak-90h70-70k.jpg", size: "90x70", format: 'Холст, масло', path: 'fisherman' , author: 'Леонид Колосов'},
-        { name: "Озеро", image: "/img/fantstic-canvas/ozero-90h105-95-k.jpg", size: "90x105", format: 'Холст, масло', path: 'ocean' , author: 'Леонид Колосов'},
         {
             name: "Дед Мазай", image: "/img/fantstic-canvas/ded-mazaj135h90-110-k.jpg", size: "135x90", format: 'Холст, масло', path: 'grandfather-mazai' , author: 'Леонид Колосов'},
         {
